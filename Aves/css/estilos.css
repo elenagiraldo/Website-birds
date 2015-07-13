@@ -1,0 +1,683 @@
+*{
+	padding:0px;
+	margin:0 auto;
+	font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	list-style:none;
+	}
+/*Menu*/
+#Encabezado{
+	width:100%;
+	height:25px;
+	padding:15px 15px 15px 15px;
+	background-color:rgba(0,0,0,.8);
+	position:fixed;
+	z-index:1000;
+	}
+#Iconos{
+	position:relative;
+	width:20%;
+	height:25px;
+	position:absolute;
+	margin-left:55%;
+	}
+
+#IconoChat{
+	position:absolute;
+	width:35px;
+	height:auto;
+	margin-left:1%;
+	}
+	
+#IconoChat:hover{
+	opacity:.9;
+	}
+	
+#IconoMapa{
+	position:absolute;
+	width:35px;
+	height:auto;
+	margin-left:50%;
+	}
+	
+#IconoMapa:hover{
+	opacity:.9;
+	}	
+	
+#IconoMenu{
+	position:absolute;
+	width:100%;
+	height:auto;
+	margin-left:100%;
+	}
+	
+#IconoMenu:hover{
+	opacity:.9;
+	}
+	
+#Logo{
+	position:absolute;
+	float:left;
+	margin-top:-10px;
+	margin-left:1%;
+	}
+	
+#PanelMenu{
+	width:70%;
+	max-width:300px;
+	background-color:rgba(0,0,0,.9);
+	padding:0px;
+	}
+	
+#ListaMenu{
+	border-radius:0px;
+	width:100%;
+	background-color:rgba(0,0,0,.0);
+	border:0px;
+	}
+	
+	
+#bI,#bA,#bG,#bC,#bV{
+	background-color:rgba(0,0,0,.8);
+	width:100%;
+	margin-left:-17px;
+	transition:background .3s;
+    -webkit-transition:background .3s;
+	}
+
+#bI:hover,#bA:hover,#bG:hover,#bC:hover,#bV:hover{
+	background-color:rgba(43,231,255,.8)
+	}
+	
+#CerrarMenu{
+	position:relative;
+	width:100%;
+	height:25px;
+	}
+
+
+#Presionado{
+	background-color:rgba(0,91,135,.7);
+	width:100%;
+	margin-left:-17px;
+	}
+/*Termina Menu*/
+	
+	
+/*General*/
+p{
+	font-size:16px;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	}
+
+h4{
+	font-size:18px;
+	}
+	
+#Contenedor{
+	width:100%;
+	}
+/*Termina General*/	
+
+
+/*Bienvenida*/
+#Bienvenida{
+	width:100%;
+	height:auto;
+	background-size:cover;
+	background-image:url(../img/Fondos/img_02.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+	background-position:50% 50%;
+	}
+
+#CuadroBienvenida{
+	position:absolute;
+	width:75%;
+	max-width:410px;
+	height:auto;
+	max-height:210px;
+	text-align:left;
+	margin-top:27%;
+	background-color:rgba(0,0,0,1.00);
+	color:rgba(255,255,255,1.00);
+	padding:20px;
+	opacity:0.9;
+	}
+	
+#Continuar{
+	position:relative;
+	border:1px solid rgba(255,255,255,1.00);
+	background-color:rgba(0,0,0,1.00);
+	border-radius:0px;
+	width:100px;
+	margin-top:15px;
+	color:rgba(255,255,255,1.00);
+	transition:background .3s;
+    -webkit-transition:background .3s;
+	}
+	
+#TextoContinuar{
+	float:left;
+	margin-top:2px;
+	} 
+	
+#FlechaS{
+	float:left;
+	margin-left:5px;
+	}
+	
+#Continuar:hover{
+	background-color:rgba(255,255,255,.5);
+	color:rgba(0,0,0,1.00);
+	}
+/*Termina Bienvenida*/
+
+/*Inicio*/
+#Inicio{
+	width:100%;
+	height:auto;
+	background-size:cover;
+	background-image:url(../img/Fondos/img_03.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+	background-position:10% 40%;
+	}
+	
+#CuadroInicio{
+	position:absolute;
+	width:75%;
+	height:auto;
+	text-align:left;
+	margin-top:22%;
+	color:rgba(255,255,255,1.00);
+	padding:20px;
+	opacity:0.9;
+	}
+	
+#SabiasQue, #MapaZoo, #Personajes{
+	padding:20px;
+	border-radius:0px;
+	width:80%;
+	max-width:700px;
+	background-color:rgba(0,0,0,.9);
+	border:0px;
+	}
+
+#Personajes{
+	max-width:500px;
+	}
+
+#BarraSabias{
+	position:relative;
+	width:100%;
+	height:50px;
+	}	
+
+.TituloPop{
+	float:left;
+	}
+
+#Cerrar{
+	position:absolute;
+	border:0px;
+	float:left;
+	margin-left:90%;
+	background-color:rgba(255,255,255,.0);
+	margin-top:0px;
+	border-radius:0px;
+	}
+
+#PopSabias, #PopMapa, #PopPersonajes{
+	border:0px;
+	position:relative;
+	border-radius:0px;
+	width:100%;
+	max-width:360px;
+	height:50px;
+	padding:5px;
+	background-color:rgba(0,0,0,.8);
+	transition:background .3s;
+    -webkit-transition:background .3s;
+	margin-top:-7px;
+	}
+	
+#PopSabias:hover, #PopMapa:hover, #PopPersonajes:hover{
+	background-color:rgba(43,231,255,.8);
+	color:rgba(0,0,0,1.00);
+	}
+	
+.IconoSabias, .TextoSabias{
+	float:left;
+	}
+
+.TextoSabias{
+	margin-left:10px;
+	margin-top:16px;
+	}
+		
+#ImgMapa{
+	position:relative;
+	width:100%;
+	overflow:auto;
+	}
+	
+.ImgPersonajes{
+	position:relative;
+	width:100%;
+	max-width:450px;
+	}
+
+/*Termina Inicio*/
+
+
+/*Aves*/	
+#Aves{
+	width:100%;
+	height:auto;
+	background-size:cover;
+	background-image:url(../img/Fondos/img_04.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+	background-position:50% 38%;
+	}	
+	
+#ColapsablesGrup{
+	margin-top:60px;
+	border-radius:0px;
+	width:90%;
+	max-width:500px;
+	opacity:.9;
+	}
+
+.Camuflaje{
+	opacity:0;
+	float:left;
+	}
+
+.imgAve{
+	width:100%;
+	margin-top:9px;
+	margin-bottom:9px;
+	}
+
+span{
+	position:absolute;
+	margin-left:10px;
+	margin-top:15px;
+	font-size:16px;
+	color:rgba(0,0,0,1.00);
+	font-weight:700;
+	}	
+
+.descripcion{
+	margin-left:50px;
+	}
+
+/*Termina Aves*/
+
+
+/*Galeria*/
+#ContenedorG{
+	padding:0px;
+	width:100%;
+	}
+
+	
+#FooterG{
+	border:0px;
+	width:100%;
+	height:20px;
+	padding:15px 0px 0px 0px;
+	background-color:rgba(0,0,0,.9);
+	}
+
+#imagenes{
+	width:100%;
+	}
+
+#Imagen1{
+	position:absolute;
+	border-radius:0px;
+	border:2px solid rgba(255,255,255,1.00);
+	width:30%;
+	height:63%;
+	background-size:cover;
+	background-image:url(../img/Galeria/img_01.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:50% 50%;
+	margin-top:0px;
+	float:left;
+	
+	}
+	
+#Imagen2{
+	position:absolute;
+	border-radius:0px;
+	border:2px solid rgba(255,255,255,1.00);
+	width:35%;
+	height:60%;
+	background-size:cover;
+	background-image:url(../img/Galeria/img_08.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:70% 2%;
+	margin-top:0px;
+	margin-left:32%;
+	float:left;
+	z-index:2;
+	}
+	
+#Imagen3{
+	position:absolute;
+	border-radius:0px;
+	border:2px solid rgba(255,255,255,1.00);
+	width:45%;
+	height:80%;
+	background-size:cover;
+	background-image:url(../img/Galeria/img_03.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:70% 2%;
+	margin-top:0px;
+	margin-left:60%;
+	float:left;
+	z-index:4;
+	}
+	
+#Imagen4{
+	position:absolute;
+	border-radius:0px;
+	border:2px solid rgba(255,255,255,1.00);
+	width:30%;
+	height:70%;
+	background-size:cover;
+	background-image:url(../img/Galeria/img_02.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:30% 50%;
+	margin-top:33%;
+	float:left;
+	
+	}
+	
+#Imagen5{
+	position:absolute;
+	border-radius:0px;
+	border:2px solid rgba(255,255,255,1.00);
+	width:30%;
+	height:70%;
+	background-size:cover;
+	background-image:url(../img/Galeria/img_04.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:90% 2%;
+	margin-left:32%;
+	float:left;
+	margin-top:27%;
+	z-index:3;
+	}
+	
+#Imagen6{
+	position:absolute;
+	border-radius:0px;
+	border:2px solid rgba(255,255,255,1.00);
+	width:30%;
+	height:75%;
+	background-size:cover;
+	background-image:url(../img/Galeria/img_07.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:20% 20%;
+	margin-left:0px;
+	float:left;
+	margin-top:50%;
+	overflow:inherit;
+	}
+	
+
+#Imagen7{
+	position:absolute;
+	border-radius:0px;
+	border:2px solid rgba(255,255,255,1.00);
+	width:25.4%;
+	height:50%;
+	background-size:cover;
+	background-image:url(../img/Galeria/img_05.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:80% 2%;
+	margin-top:-17px;
+	margin-left:32%;
+	float:left;
+	margin-top:52%;
+	z-index:5;
+	}
+	
+	
+#Imagen9{
+	position:absolute;
+	border-radius:0px;
+	border:2px solid rgba(255,255,255,1.00);
+	width:40%;
+	height:51.3%;
+	background-size:cover;
+	background-image:url(../img/Galeria/img_09.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:10% 2%;
+	margin-left:60%;
+	float:left;
+	margin-top:37%;
+	z-index:6;
+	}
+	
+#Imagen10{
+	position:absolute;
+	border-radius:0px;
+	border:2px solid rgba(255,255,255,1.00);
+	width:30%;
+	height:27%;
+	background-size:cover;
+	background-image:url(../img/Galeria/img_10.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:80% 2%;
+	margin-left:32%;
+	float:left;
+	margin-top:74.5%;
+	z-index:7;
+	}
+	
+#Imagen11{
+	position:absolute;
+	border-radius:0px;
+	border:2px solid rgba(255,255,255,1.00);
+	width:50%;
+	height:55%;
+	background-size:cover;
+	background-image:url(../img/Galeria/img_11.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:70% 2%;
+	margin-left:60%;
+	float:left;
+	margin-top:60%;
+	z-index:8;
+	}
+	
+#Imagen12{
+	position:absolute;
+	border-radius:0px;
+	border:2px solid rgba(255,255,255,1.00);
+	width:100%;
+	height:53%;
+	background-size:cover;
+	background-image:url(../img/Galeria/img_12.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:50% 10%;
+	margin-left:0px;
+	float:left;
+	margin-top:88%;
+	z-index:9;
+	}
+	
+
+#img1, #img2, #img3, #img4, #img5, #img6, #img7, #img9, #img10, #img11, #img12{
+	width:70%;
+	}
+	
+	
+#CerrarImg{
+	position:absolute;
+	border:0px;
+	float:left;
+	margin-left:5px;
+	background-color:rgba(255,255,255,.0);
+	border-radius:0px;
+	}
+
+/*Termina Galeria*/
+
+/*Videos*/
+#Videos{
+	background-color:rgba(239,231,216,1.00);
+	}
+#ContVideos{
+	width:100%;
+	height:auto;
+	margin-top:40px;
+	margin-left:-15px;
+	}
+	
+.Cvideo{
+	min-width:270px;
+	width:31%;
+	height:260px;
+	float:left;
+	margin-left:18px;
+	margin-top:20px;
+	}
+/*Termina Videos*/
+
+
+
+/*Contacto*/
+#Contacto{
+	width:100%;
+	height:auto;
+	background-size:cover;
+	background-image:url(../img/Fondos/img_05.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+	background-position:50% 10%;
+	}
+
+#Contacto #MapaU{
+	width:100%;
+	padding:20px;
+	}
+	
+#Llamanos{
+	padding:20px;
+	border-radius:0px;
+	width:80%;
+	background-color:rgba(0,0,0,.9);
+	border:0px;
+	}
+
+#Escribenos{
+	padding:20px;
+	border-radius:0px;
+	width:80%;
+	background-color:rgba(0,0,0,.9);
+	border:0px;
+	}
+/*Termina Contacto*/
+
+
+/*Footer*/
+#Footer{
+	border:0px;
+	width:100%;
+	height:20px;
+	padding:15px 0px 0px 0px;
+	background-color:rgba(0,0,0,.8);
+	}
+
+#LogoP{
+	width:100%;
+	height:auto;
+	position:absolute;
+	float:left;
+	text-align:center;
+	margin-top:-10px;
+	}
+/*Termina Footer*/
+
+@media (min-width:880px){
+	#Iconos{
+	position:relative;
+	width:20%;
+	height:25px;
+	position:absolute;
+	margin-left:70%;
+	}
+
+#IconoChat{
+	position:absolute;
+	width:35px;
+	height:auto;
+	margin-left:40%;
+	}
+	
+#IconoMapa{
+	position:absolute;
+	width:35px;
+	height:auto;
+	margin-left:70%;
+	}	
+	
+#IconoMenu{
+	position:absolute;
+	width:100%;
+	height:auto;
+	margin-left:100%;
+	}
+	}
+	
+@media (min-width:520px) and (max-width:879px){
+	#Iconos{
+	position:relative;
+	width:20%;
+	height:25px;
+	position:absolute;
+	margin-left:65%;
+	}
+
+#IconoChat{
+	position:absolute;
+	width:35px;
+	height:auto;
+	margin-left:35%;
+	}
+	
+#IconoMapa{
+	position:absolute;
+	width:35px;
+	height:auto;
+	margin-left:65%;
+	}	
+	
+#IconoMenu{
+	position:absolute;
+	width:100%;
+	height:auto;
+	margin-left:100%;
+	}
+	}

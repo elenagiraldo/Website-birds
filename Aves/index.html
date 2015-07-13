@@ -1,0 +1,1652 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,maximum-scale=1, user-scalable=no">
+<title>Aves</title>
+<link rel="stylesheet" type="text/css" href="css/estilos.css">
+<link rel="stylesheet" type="text/css" href="css/jquery_mobile.css">
+<script src="js/jquery.js"></script>
+<script src="js/jquery_mobile.js"></script>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+<!--Bienvenida-->
+<div data-role="page" id="Bienvenida">
+<!--Menu Barra-->
+  <div id="Encabezado" data-position="fixed">
+		<div id="Iconos">
+        <div id="IconoChat"><a href="../../index.html#Chat" rel="external" data-ajax="false"><img src="img/Iconos/Chat.png"></a></div>
+        <div id="IconoMapa"><a href="../../index.html#Mapa" rel="external" data-ajax="false"><img src="img/Iconos/Mapa.png"></a></div>
+		<div id="IconoMenu"><a href="#PanelMenu" data-rel="panel"><img src="img/Iconos/Menu.png"></a></div>
+        </div>
+        <div id="Logo"><a href="#Bienvenida" data-transition="slide"><img src="img/Iconos/Logo.png"></a></div>
+  </div>
+<!--Panel Menu-->
+    <div data-role="panel" id="PanelMenu" data-display="overlay" data-position="right">  
+    	<div id="ListaMenu" data-role="controlgroup" data-theme="b">
+        	<a href="#" data-rel="close"><div id="CerrarMenu"><img src="img/Iconos/FlechaS.png"></div></a>
+    		<a href="#Inicio" data-role="button" data-iconpos="left" id="bI" data-transition="slide">Inicio</a>
+   			<a id="bA" href="#Aves" data-role="button" data-iconpos="left" data-transition="slide" data-ajax="true">Aves</a>
+    		<a id="bG" href="#Galeria" data-role="button" data-iconpos="left" data-transition="slide">Galería</a>
+    		<a id="bV" href="#Videos" data-role="button" data-iconpos="left" data-transition="slide">Videos</a>
+    		<a id="bC" href="#Contacto" data-role="button" data-iconpos="left" data-transition="slide">Contacto</a>
+    	</div>
+  	</div>
+<!--Termina Panel Menu-->
+
+<!--Contenido-->
+<div id="Contenedor" data-role="content">
+  	<div id="CuadroBienvenida"><h4>ZOOLÓGICO SANTA FE</h4><p>Bienvenido al sitio web de aves, aquí podrás encontrar toda la  información acerca de las aves que se encuentran en el Zoológico Santa Fe de la Ciudad de Medellín.</p>
+<a id="Continuar" href="#Inicio" data-role="button" data-transition="slide"><p id="TextoContinuar">Continuar</p><img id="FlechaS" src="img/Iconos/FlechaS.png"></a>
+</div>
+  </div>
+<!--Termina Contenido-->
+
+<!--Footer-->
+<div id="Footer" data-role="footer" data-position="fixed">
+    <div id="LogoP"><img src="img/Iconos/LogoP.png"></div>
+</div>
+</div>
+<!--Termina Footer-->
+
+<!--Termina Bienvenida-->
+
+
+
+
+
+<!--Inicio-->
+<div data-role="page" id="Inicio">
+<!--Menu Barra-->
+  <div id="Encabezado" data-position="fixed">
+		<div id="Iconos">
+        <div id="IconoChat"><a href="../../index.html#Chat" rel="external" data-ajax="false"><img src="img/Iconos/Chat.png"></a></div>
+        <div id="IconoMapa"><a href="../../index.html#Mapa" rel="external" data-ajax="false"><img src="img/Iconos/Mapa.png"></a></div>
+		<div id="IconoMenu"><a href="#PanelMenu" data-rel="panel"><img src="img/Iconos/Menu.png"></a></div>
+        </div>
+        <div id="Logo"><a href="#Bienvenida" data-transition="slide"><img src="img/Iconos/Logo.png"></a></div>
+  </div>
+<!--Panel Menu-->
+    <div data-role="panel" id="PanelMenu" data-display="overlay" data-position="right">  
+    	<div id="ListaMenu" data-role="controlgroup" data-theme="b">
+        	<a href="#" data-rel="close"><img id="FlechaS" src="img/Iconos/FlechaS.png"></a>
+    		<a id="Presionado" href="#Inicio" data-role="button" data-iconpos="left" data-transition="slide">Inicio</a>
+   			<a id="bA" href="#Aves" data-role="button" data-iconpos="left" data-transition="slide">Aves</a>
+    		<a id="bG" href="#Galeria" data-role="button" data-iconpos="left" data-transition="slide">Galería</a>
+    		<a id="bV" href="#Videos" data-role="button" data-iconpos="left" data-transition="slide">Videos</a>
+    		<a id="bC" href="#Contacto" data-role="button" data-iconpos="left" data-transition="slide">Contacto</a>
+    	</div>
+  	</div>
+<!--Termina Panel Menu-->
+
+<!--Contenido-->
+<div id="Contenedor" data-role="content">
+	<div id="CuadroInicio">
+		<a href="#SabiasQue" data-role="button" data-rel="popup" data-transition="pop" data-theme="b" id="PopSabias">
+        	<img class="IconoSabias" src="img/Iconos/Sabias.png">
+        	<h4 class="TextoSabias">¿Sabías que?</h4>
+        </a>
+        <a href="#MapaZoo" data-role="button" data-rel="popup" data-transition="pop" data-theme="b" id="PopMapa">
+        	<img class="IconoSabias" src="img/Iconos/MapaU.png">
+        	<h4 class="TextoSabias">Mapa</h4>
+        </a>
+        <a href="#Personajes" data-role="button" data-rel="popup" data-transition="pop" data-theme="b" id="PopPersonajes">
+        	<img class="IconoSabias" src="img/Iconos/Personajes.png">
+        	<h4 class="TextoSabias">Personajes</h4>
+        </a>
+	</div>
+<!--Pop Up 1-->
+<div data-role="popup" id="SabiasQue" data-position-to="window" data-theme="b">
+	<div class="Datos">
+    	<div id="BarraSabias"><center><h4 class="TituloPop">¿Sabías Que?</h4></center><a href="#" data-role="button" data-icon="delete" data-rel="back" data-iconpos="notext" id="Cerrar" data-position="fixed"></a></div>
+        <p>> Las aves cortejan a sus parejas a través de cantos, despliegue de plumas y hasta regalos nupciales.<br><br>
+        
+> Los animales que viven en un hábitat terrestre y acuático como los pingüinos o los patos, tienen los dedos de las patas unidos con una membrana, así pueden avanzar rápidamente en el agua como si tuvieran remos.<br><br>
+
+> Las aves poseen plumas livianas y sus huesos son huecos para facilitar el desplazamiento por el aire.<br><br>
+
+> El avestruz no puede volar pero es capaz de correr a una velocidad superior a los 50 kilómetros por hora.
+</p>
+    </div>
+</div>
+<!--Termina Pop Up 1-->
+
+<!--Pop Up 2-->
+<div data-role="popup" id="MapaZoo" data-position-to="window" data-theme="b">
+	<div class="Datos">
+    	<div id="BarraSabias"><center><h4 class="TituloPop">Mapa del Zoológico</h4></center><a href="#" data-role="button" data-icon="delete" data-rel="back" data-iconpos="notext" id="Cerrar"></a></div>
+        <img id="ImgMapa" src="img/Iconos/MapaZoo.png">
+    </div>
+</div>
+<!--Termina Pop Up 2-->
+
+<!--Pop Up 3-->
+<div data-role="popup" id="Personajes" data-position-to="window" data-theme="b">
+	<div class="Datos">
+    	<div id="BarraSabias"><center><h4 class="TituloPop">Personajes</h4></center><a href="#" data-role="button" data-icon="delete" data-rel="back" data-iconpos="notext" id="Cerrar"></a></div>
+        <div id="ImgMapa">
+        	<img class="ImgPersonajes" src="img/Personajes/Eli.png">
+            <img class="ImgPersonajes" src="img/Personajes/Jack.png">
+            <img class="ImgPersonajes" src="img/Personajes/Francis.png">
+        </div>
+    </div>
+</div>
+<!--Termina Pop Up 3-->
+
+</div>
+<!--Termina Contenido-->
+
+<!--Footer-->
+<div id="Footer" data-role="footer" data-position="fixed">
+    <div id="LogoP"><img src="img/Iconos/LogoP.png"></div>
+</div>
+</div>
+<!--Termina Footer-->
+<!--Termina Inicio-->
+
+
+
+<!--Aves-->
+<div data-role="page" id="Aves">
+<!--Menu Barra-->
+  <div id="Encabezado" data-position="fixed">
+		<div id="Iconos">
+        <div id="IconoChat"><a href="../../index.html#Chat" rel="external" data-ajax="false"><img src="img/Iconos/Chat.png"></a></div>
+        <div id="IconoMapa"><a href="../../index.html#Mapa" rel="external" data-ajax="false"><img src="img/Iconos/Mapa.png"></a></div>
+		<div id="IconoMenu"><a href="#PanelMenu" data-rel="panel"><img src="img/Iconos/Menu.png"></a></div>
+        </div>
+        <div id="Logo"><a href="#Bienvenida" data-transition="slide"><img src="img/Iconos/Logo.png"></a></div>
+  </div>
+<!--Panel Menu-->
+    <div data-role="panel" id="PanelMenu" data-display="overlay" data-position="right">  
+    	<div id="ListaMenu" data-role="controlgroup" data-theme="b">
+        	<a href="#" data-rel="close"><div id="CerrarMenu"><img src="img/Iconos/FlechaS.png"></div></a>
+    		<a href="#Inicio" data-role="button" data-iconpos="left" id="bI" data-transition="slide">Inicio</a>
+   			<a id="Presionado" href="#Aves" data-role="button" data-iconpos="left" data-transition="slide">Aves</a>
+    		<a id="bG" href="#Galeria" data-role="button" data-iconpos="left" data-transition="slide">Galería</a>
+    		<a id="bV" href="#Videos" data-role="button" data-iconpos="left" data-transition="slide">Videos</a>
+    		<a id="bC" href="#Contacto" data-role="button" data-iconpos="left" data-transition="slide">Contacto</a>
+    	</div>
+  	</div>
+<!--Termina Panel Menu-->
+
+<!--Contenido-->
+<div id="Contenedor" data-role="content">
+<!-- Colapsables-->
+ <div id="ColapsablesGrup" data-role="collapsible-set">
+ 
+ 
+  	<div data-role="collapsible" data-theme="c" data-content-theme="a" data-expanded-icon="carat-u" data-collapsed-icon="carat-d" data-iconpos="right">
+    	<h4><img src="img/Aves/img_01.png" align="absmiddle"> Águila de cola blanca</h4>
+        <p>
+        <img class="imgAve" src="img/Aves/img_01.jpg"><br>
+        <img src="img/Iaves/nombre.png"><span>Nombre común</span><br>
+        <p class="descripcion">Águila de cola blanca (Esp) – White-tailed Hawk (Eng)<p><br>
+        <img src="img/Iaves/clasificacion.png"><span>Clasificación</span><br>
+        <p class="descripcion"><b>Reino:</b> Animalia<br>
+		<b>Phylum:</b> Chordata<br>
+		<b>Clase:</b> Aves<br>
+		<b>Orden:</b> Falconiformes<br>
+		<b>Familia:</b> Accipitridae<br>
+		<b>Género:</b> Buteo<br>
+		<b>Especie:</b> Buteo albicaudatus<p><br>
+        <img src="img/Iaves/distribucion.png"><span>Distribución geográfica</span><br>
+        <p class="descripcion">Habitan desde el sur de Estados Unidos pasando por Centroamérica, hasta el centro de Argentina.<p><br>
+        <img src="img/Iaves/habitat.png"><span>Habitat</span><br>
+        <p class="descripcion">Tierras bajas en sabanas abiertas, praderas inundadas, tierras agrícolas y matorrales tropicales áridos.<p><br>
+        <img src="img/Iaves/alimentacion.png"><span>Alimentación</span><br>
+         <p class="descripcion">Se alimentan principalmente de pequeños mamíferos como ratas y zarigüeyas, aves (incluso aves de corral), lagartos, serpientes y sapos (Bufo marinus) y algunos insectos. Algunas veces van a sitios incendiados en las temporadas secas para consumir animales que huyen del fuego y/o mueren a causa de las llamas.<p><br>
+        <img src="img/Iaves/reproduccion.png"><span>Reproducción</span><br>
+         <p class="descripcion">Sus nidos son plataformas construidas con varas, acolchonados con pastos secos en el interior, ubicados en árboles aislados en la sabana o en el campo. El tamaño de la nidada es de 1 a 3 huevos (generalmente 2) de color blanco o con unas pocas manchas marrones débiles o sin ellas. Los huevos eclosionan a los 45 días y los polluelos permanecen en el nido durante 10 semanas aproximadamente.<p><br>
+        <img src="img/Iaves/comportamiento.png"><span>Comportamiento</span><br>
+         <p class="descripcion">Son aves diurnas. Vuelan bastante alto, a veces de dos en dos, para caer sobre su presa. Suelen posarse en arbustos bajos, postes de cerca o incluso sobre el terreno en las colinas expuestas.<p><br>
+        <img src="img/Iaves/conservacion.png"><span>Estado de conservación</span><br>
+         <p class="descripcion">Preocupación menor (Least concern –IUCN).<p><br>
+        <img src="img/Iaves/amenazas.png"><span>Amenazas</span>
+         <p class="descripcion">Actualmente no se conocen amenazas sustanciales. Las poblaciones parecen estar incrementando.<p><br>
+        </p>
+    </div>
+    
+    
+    
+    <div data-role="collapsible" data-theme="c" data-content-theme="a" data-expanded-icon="carat-u" data-collapsed-icon="carat-d" data-iconpos="right">
+    	<h4><img src="img/Aves/img_02.png" align="absmiddle"> Barranquero</h4>
+         <p>
+         <img class="imgAve" src="img/Aves/img_02.jpg"><br>
+        <img src="img/Iaves/nombre.png"><span>Nombre común</span><br>
+        <p class="descripcion">Barranquero, soledad (Esp) – Blue-crowned Motmot (Eng)<p><br>
+        <img src="img/Iaves/clasificacion.png"><span>Clasificación</span><br>
+        <p class="descripcion"><b>Reino:</b> Animalia<br>
+		<b>Phylum:</b> Chordata<br>
+		<b>Clase:</b> Aves<br>
+		<b>Orden:</b> Coraciiformes<br>
+		<b>Familia:</b> Momotidae<br>
+		<b>Género:</b> Momotus<br>
+		<b>Especie:</b> Momotus momota<p><br>
+        <img src="img/Iaves/distribucion.png"><span>Distribución geográfica</span><br>
+        <p class="descripcion">Es posible encontrar barranqueros en países de Centro y Suramérica, desde el nororiente de México hasta el noroccidente de Perú, Paraguay, Bolivia, Trinidad y el norte de Argentina.<p><br>
+        <img src="img/Iaves/habitat.png"><span>Habitat</span><br>
+        <p class="descripcion">Ocupan gran variedad de hábitats desde el nivel del mar hasta los 3100 msnm, incluyendo las tierras bajas, bosques húmedos montanos y bosques templados, bosques abiertos semi áridos, plantaciones y claros con árboles.<p><br>
+        <img src="img/Iaves/alimentacion.png"><span>Alimentación</span><br>
+         <p class="descripcion">Se alimenta de frutos, invertebrados, reptiles y mamíferos pequeños, y en ocasiones de pequeños pájaros y pichones.<p><br>
+        <img src="img/Iaves/reproduccion.png"><span>Reproducción</span><br>
+         <p class="descripcion">Eligen lugares poco notorios para anidar, de modo que sus madrigueras son difíciles de descubrir. Las posturas constan de tres a cuatro huevos que son incubados por ambos padres. La hembra incuba generalmente por la noche. Los períodos de incubación por lo general duran de 13 días a 3 semanas.<p><br>
+        <img src="img/Iaves/comportamiento.png"><span>Comportamiento</span><br>
+         <p class="descripcion">Son aparentemente solitarios, pero mantienen vínculos de pareja durante toda su vida. Cuando se les molesta mueven espasmódicamente su cola. No son muy activos, y son difíciles de ver cuando permanecen quietos dentro del bosque. Son inactivos por la noche y activos durante el amanecer y el atardecer. Sus vocalizaciones son más notorias durante la madrugada.<p><br>
+        <img src="img/Iaves/conservacion.png"><span>Estado de conservación</span><br>
+         <p class="descripcion">Preocupación menor (Least concern –IUCN).<p><br>
+        <img src="img/Iaves/amenazas.png"><span>Amenazas</span>
+         <p class="descripcion">La destrucción de hábitat, especialmente para uso en cultivos.<p><br>
+        </p>
+    </div>
+    
+    
+    
+    <div data-role="collapsible" data-theme="c" data-content-theme="a" data-expanded-icon="carat-u" data-collapsed-icon="carat-d" data-iconpos="right">
+    	<h4><img src="img/Aves/img_03.png" align="absmiddle"> Búho real</h4>
+                 <p>
+        <img class="imgAve" src="img/Aves/img_03.jpg"><br>
+        <img src="img/Iaves/nombre.png"><span>Nombre común</span><br>
+        <p class="descripcion">Búho real (Esp) – Great Horned Owl (Eng)<p><br>
+        <img src="img/Iaves/clasificacion.png"><span>Clasificación</span><br>
+        <p class="descripcion"><b>Reino:</b> Animalia<br>
+		<b>Phylum:</b> Chordata<br>
+		<b>Clase:</b> Aves<br>
+		<b>Orden:</b> Strigiformes<br>
+		<b>Familia:</b> Strigidae<br>
+		<b>Género:</b> Bubo<br>
+		<b>Especie:</b> Bubo virginianus<p><br>
+        <img src="img/Iaves/distribucion.png"><span>Distribución geográfica</span><br>
+        <p class="descripcion">Esta especie de búho habita la totalidad del continente Americano, desde las regiones árticas en el Norte hasta el Estrecho de Magallanes en el Sur.<p><br>
+        <img src="img/Iaves/habitat.png"><span>Habitat</span><br>
+        <p class="descripcion">Bosques densos, bosques de coníferas, a lo largo de acantilados y cañones rocosos y en claros de bosques.<p><br>
+        <img src="img/Iaves/alimentacion.png"><span>Alimentación</span><br>
+         <p class="descripcion">Los búhos comen las presas enteras y regurgitan las partes no deseadas (huesos, pieles y plumas) en una especie de comprimidos llamados egagrópilas. Los hábitos alimenticios de los búhos reales se determinan mediante el estudio de las egagrópilas, de donde se deduce que sus principales fuentes de alimento son: pequeños mamíferos como conejos, marmotas, ratones, ratas, ardillas y zorrillos.<p><br>
+        <img src="img/Iaves/reproduccion.png"><span>Reproducción</span><br>
+         <p class="descripcion">Después del apareamiento utilizan nidos abandonados de otras aves, por lo general halcones o cuervos. Ponen generalmente entre 2 y 3 huevos (rara vez 5), que son incubados por ambos padres y eclosionan en aproximadamente 4 semanas. Se reproducen una vez cada año. Son padres muy protectores, resguardando a los pequeños hasta que maduran completamente y puedan dejar a la familia (aprox. 1-2 meses de edad).<p><br>
+        <img src="img/Iaves/comportamiento.png"><span>Comportamiento</span><br>
+         <p class="descripcion">En general, el búho real es solitario y habita en lugares sin presencia humana. Pasan la mayor parte del tiempo cazando. Aunque pueden ver durante el día, tienen una visión aún mejor por la noche, lo que sumado a su vuelo silencioso (debido a sus plumas sueltas y suaves) le da ventajas para que sean excelentes cazadores nocturnos.<p><br>
+        <img src="img/Iaves/conservacion.png"><span>Estado de conservación</span><br>
+         <p class="descripcion">Preocupación menor (Least concern –IUCN).<p><br>
+        <img src="img/Iaves/amenazas.png"><span>Amenazas</span>
+         <p class="descripcion">Amenazados por disparos de cazadores, trampas, atropellamientos y electrocuciones. Alrededor del 50% de los jóvenes que abandonan el nido mueren durante su primer año por diversas causas.<p><br>
+        </p>
+    </div>
+    
+    
+    
+    <div data-role="collapsible" data-theme="c" data-content-theme="a" data-expanded-icon="carat-u" data-collapsed-icon="carat-d" data-iconpos="right">
+    	<h4><img src="img/Aves/img_04.png" align="absmiddle"> Cálao bicorne</h4>
+                         <p>
+        <img class="imgAve" src="img/Aves/img_04.jpg"><br>
+        <img src="img/Iaves/nombre.png"><span>Nombre común</span><br>
+        <p class="descripcion">Cálao bicorne (Esp) – Great Hornbill (Eng)<p><br>
+        <img src="img/Iaves/clasificacion.png"><span>Clasificación</span><br>
+        <p class="descripcion"><b>Reino:</b> Animalia<br>
+		<b>Phylum:</b> Chordata<br>
+		<b>Clase:</b> Aves<br>
+		<b>Orden:</b> Strigiformes<br>
+		<b>Familia:</b> Bucerotidae<br>
+		<b>Género:</b> Buceros<br>
+		<b>Especie:</b> Buceros bicornis<p><br>
+        <img src="img/Iaves/distribucion.png"><span>Distribución geográfica</span><br>
+        <p class="descripcion">Habitan todo el sudeste Asiático, la Península de Malasia e Indonesia. Están presentes en Bután, Camboya, China, India, Indonesia, Laos, Malasia, Myanmar, Nepal, Tailandia y Vietnam.<p><br>
+        <img src="img/Iaves/habitat.png"><span>Habitat</span><br>
+        <p class="descripcion">Son animales arborícolas que viven principalmente en bosques húmedos, en árboles altos de hoja perenne en alturas que van desde los 600 y 2000 msnm.<p><br>
+        <img src="img/Iaves/alimentacion.png"><span>Alimentación</span><br>
+         <p class="descripcion">Son predominantemente frugívoros pero también se alimentan de pequeños mamíferos, aves, anfibios, reptiles e insectos.<p><br>
+        <img src="img/Iaves/reproduccion.png"><span>Reproducción</span><br>
+         <p class="descripcion">Se reproducen entre febrero y mayo. El tamaño del casco que presentan los machos es determinante a la hora de atraer a las hembras y luchar por reproducirse son ellas. Eligen para anidar un árbol generalmente alto y viejo-el cual usan cada año si es posible. Después de encontrar un agujero lo suficientemente grande en el árbol, la hembra utiliza sus propias heces y las de su compañero para cubrir la entrada desde el interior, confinándose a sí misma. Desde adentro, realiza una pequeña incisión a través de la cual el macho proporciona alimento. Mientras está en el interior del agujero, la hembra pone y luego incuba un promedio de dos huevos cuyo período de incubación suele durar entre 38 y 40 días. Protegida dentro del árbol, la hembra realiza una muda completa que le impide volar durante cierto período de tiempo. Después de que los polluelos eclosionan, la hembra permanece confinada en el árbol durante unas cinco semanas, después de las cuales sale para ayudar al macho a conseguir alimento para los polluelos. Los jóvenes vuelven a encerrarse a sí mismos dentro de la cavidad después de que la hembra vuelve a salir. Por las próximas dos semanas, los dos padres proporcionan alimento a los pequeños. Después de que los jóvenes emergen, los padres continúan alimentándolos hasta que alcanzan aproximadamente 15 semanas de edad, momento en el cual se consideran independientes.<p><br>
+        <img src="img/Iaves/comportamiento.png"><span>Comportamiento</span><br>
+         <p class="descripcion">Permanecen en pequeños grupos de parejas monógamas con sus crías. Son activos durante el día y en la noche se reúnen en grandes dormideros comunales que pueden contener cientos de individuos.<p><br>
+        <img src="img/Iaves/conservacion.png"><span>Estado de conservación</span><br>
+         <p class="descripcion">Casi amenazado (Near threatened –IUCN).<p><br>
+        <img src="img/Iaves/amenazas.png"><span>Amenazas</span>
+         <p class="descripcion">Destrucción de hábitat por deforestación para industria maderera y agricultura. Tráfico ilegal.<p><br>
+        </p>
+    </div>
+    
+    
+    
+ <div data-role="collapsible" data-theme="c" data-content-theme="a" data-expanded-icon="carat-u" data-collapsed-icon="carat-d" data-iconpos="right">
+    	<h4><img src="img/Aves/img_05.png" align="absmiddle"> Carriquí violáceo</h4>
+                         <p>
+        <img class="imgAve" src="img/Aves/img_05.jpg"><br>
+        <img src="img/Iaves/nombre.png"><span>Nombre común</span><br>
+        <p class="descripcion">Carriquí violáceo, Pollo de monte (Esp) – Violaceous Jay (Eng)<p><br>
+        <img src="img/Iaves/clasificacion.png"><span>Clasificación</span><br>
+        <p class="descripcion"><b>Reino:</b> Animalia<br>
+		<b>Phylum:</b> Chordata<br>
+		<b>Clase:</b> Aves<br>
+		<b>Orden:</b> Passeriformes<br>
+		<b>Familia:</b> Corvidae<br>
+		<b>Género:</b> Cyanocorax<br>
+		<b>Especie:</b> Cyanocorax violaceus<p><br>
+        <img src="img/Iaves/distribucion.png"><span>Distribución geográfica</span><br>
+        <p class="descripcion">Su rango de distribución comprende Bolivia, Perú, Ecuador, Colombia, Brasil, Guyana y Venezuela.<p><br>
+        <img src="img/Iaves/habitat.png"><span>Habitat</span><br>
+        <p class="descripcion">Bosques húmedos tropicales o subtropicales de tierras bajas y viejos bosques degradados.<p><br>
+        <img src="img/Iaves/alimentacion.png"><span>Alimentación</span><br>
+         <p class="descripcion">Son animales omnívoros, consumen principalmente frutas, insectos, pequeñas lagartijas y huevos de aves y reptiles.<p><br>
+        <img src="img/Iaves/reproduccion.png"><span>Reproducción</span><br>
+         <p class="descripcion">No existe buena información acerca de la reproducción de esta especie.<p><br>
+        <img src="img/Iaves/comportamiento.png"><span>Comportamiento</span><br>
+         <p class="descripcion">Son aves extremadamente sociales, viajan en grupos ruidosos y activos de 6 a 12 individuos. Los miembros de la bandada tienen la costumbre de pasar uno por uno a través de ríos y claros del bosque. A veces se asocia con otras especies de dosel, como bandadas de oropéndolas y caciques. <p><br>
+        <img src="img/Iaves/conservacion.png"><span>Estado de conservación</span><br>
+         <p class="descripcion">Preocupación menor (Least concern–IUCN).<p><br>
+        <img src="img/Iaves/amenazas.png"><span>Amenazas</span>
+         <p class="descripcion">Destrucción de hábitat y tráfico ilegal.<p><br>
+        </p>
+    </div>
+
+
+<div data-role="collapsible" data-theme="c" data-content-theme="a" data-expanded-icon="carat-u" data-collapsed-icon="carat-d" data-iconpos="right">
+    	<h4><img src="img/Aves/img_06.png" align="absmiddle"> Chavarrí</h4>
+         <p>
+         <img class="imgAve" src="img/Aves/img_06.jpg"><br>
+          <img src="img/Iaves/nombre.png"><span>Nombre común</span><br>
+        <p class="descripcion">Chavarrí, chavarría (Esp) – Northern Screamer (Eng)<p><br>
+        <img src="img/Iaves/clasificacion.png"><span>Clasificación</span><br>
+        <p class="descripcion"><b>Reino:</b> Animalia<br>
+		<b>Phylum:</b> Chordata<br>
+		<b>Clase:</b> Aves<br>
+		<b>Orden:</b> Anseriformes<br>
+		<b>Familia:</b> Anhimidae<br>
+		<b>Género:</b> Chauna<br>
+		<b>Especie:</b> Chauna chavaria<p><br>
+        <img src="img/Iaves/distribucion.png"><span>Distribución geográfica</span><br>
+        <p class="descripcion">Colombia y una pequeña parte de Venezuela.<p><br>
+        <img src="img/Iaves/habitat.png"><span>Habitat</span><br>
+        <p class="descripcion">Los chavarríes habitan tierras bajas en pantanos, lagunas con gran vegetación en sus alrededores y áreas abiertas o boscosas. También en zonas con salinidad variable como los humedales de la Ciénaga Grande de Santa Marta. (Delgado, M. E. 2010. Chavarría (Chauna chavaria). Wiki Aves Colombia. (R. Johnston, Editor). Universidad ICESI. Cali. Colombia.<p><br>
+        <img src="img/Iaves/alimentacion.png"><span>Alimentación</span><br>
+         <p class="descripcion">Consumen principalmente vegetación semi acuática y acuática.<p><br>
+        <img src="img/Iaves/reproduccion.png"><span>Reproducción</span><br>
+         <p class="descripcion">Las posturas constan de 2 a 7 huevos de color blanco a amarillo cuyo periodo de incubación oscila entre 42 y 44 días. La elaboración del nido e incubación de los huevos es realizada por ambos padres. (Delgado, M. E. 2010. Chavarría (Chauna chavaria). Wiki Aves Colombia. (R. Johnston, Editor). Universidad ICESI. Cali. Colombia.<p><br>
+        <img src="img/Iaves/comportamiento.png"><span>Comportamiento</span><br>
+         <p class="descripcion">Pueden encontrarse desde solitarios hasta en parejas o pequeños grupos. Cuando están en celo o cuidando polluelos su carácter es bastante agresivo. <p><br>
+        <img src="img/Iaves/conservacion.png"><span>Estado de conservación</span><br>
+         <p class="descripcion">Casi amenazado (Near threatened–IUCN).<p><br>
+        <img src="img/Iaves/amenazas.png"><span>Amenazas</span>
+         <p class="descripcion">Pérdida de hábitat debido al drenaje de los humedales para agricultura y ganadería. Recolección de huevos, la captura como mascotas y la caza ilegal en algunas áreas.<p><br>
+         </p>
+</div>
+
+
+<div data-role="collapsible" data-theme="c" data-content-theme="a" data-expanded-icon="carat-u" data-collapsed-icon="carat-d" data-iconpos="right">
+    	<h4><img src="img/Aves/img_07.png" align="absmiddle"> Cisne negro</h4>
+         <p>
+         <img class="imgAve" src="img/Aves/img_07.jpg"><br>
+                   <img src="img/Iaves/nombre.png"><span>Nombre común</span><br>
+        <p class="descripcion">Cisne negro (Esp) – Black swan (Eng)<p><br>
+        <img src="img/Iaves/clasificacion.png"><span>Clasificación</span><br>
+        <p class="descripcion"><b>Reino:</b> Animalia<br>
+		<b>Phylum:</b> Chordata<br>
+		<b>Clase:</b> Aves<br>
+		<b>Orden:</b> Anseriformes<br>
+		<b>Familia:</b>  Anatidae<br>
+		<b>Género:</b> Cygnus<br>
+		<b>Especie:</b> Cygnus atratus<p><br>
+        <img src="img/Iaves/distribucion.png"><span>Distribución geográfica</span><br>
+        <p class="descripcion">Especie nativa de Australia (incluyendo Tasmania) y se han introducido a Nueva Zelanda, Europa y América del Norte.<p><br>
+        <img src="img/Iaves/habitat.png"><span>Habitat</span><br>
+        <p class="descripcion">Viven en lagos, ríos y pantanos de agua dulce, salada o salobre. Ellos prefieren hábitats con vegetación acuática.<p><br>
+        <img src="img/Iaves/alimentacion.png"><span>Alimentación</span><br>
+         <p class="descripcion">Son animales herbívoros, consumen vegetación ya sea acuática o terrestre, en pastos o en tierras de cultivo, sin embargo prefieren comer follaje sub-acuático el cual alcanzan con su largo cuello.<p><br>
+        <img src="img/Iaves/reproduccion.png"><span>Reproducción</span><br>
+         <p class="descripcion">Los cisnes negros son monógamos. La temporada de reproducción es de febrero a septiembre. Por lo general, la hembra (a veces el macho) hace un nido de ramas, hojas muertas y desechos en un montículo flotante en la superficie del agua. Cada hembra puede poner entre 5 y 6 huevos. El período de incubación es de 35 a 48 días. Los machos ayudan con la incubación.<p><br>
+        <img src="img/Iaves/comportamiento.png"><span>Comportamiento</span><br>
+         <p class="descripcion">Tienden a desplazarse en bandadas y a veces anidan en colonias. Son nómadas cuando el alimento es escaso, pero son sedentarios si el alimento abunda. Se alimentan al atardecer y viajan por la noche, aunque la mayoría de las actividades las realizan durante el día.<p><br>
+        <img src="img/Iaves/conservacion.png"><span>Estado de conservación</span><br>
+         <p class="descripcion">Preocupación menor (Least concern–IUCN).<p><br>
+        <img src="img/Iaves/amenazas.png"><span>Amenazas</span>
+         <p class="descripcion">Actualmente esta especie no sufre disminución de sus poblaciones.<p><br>
+         </p>  
+</div>
+
+<div data-role="collapsible" data-theme="c" data-content-theme="a" data-expanded-icon="carat-u" data-collapsed-icon="carat-d" data-iconpos="right">
+    	<h4><img src="img/Aves/img_08.png" align="absmiddle"> Condor de los Andes</h4>
+        <p>
+         <img class="imgAve" src="img/Aves/img_08.jpg"><br> 
+                            <img src="img/Iaves/nombre.png"><span>Nombre común</span><br>
+        <p class="descripcion">Cóndor de los Andes, Cóndor Andino (Esp) – Andean Condor (Eng)<p><br>
+        <img src="img/Iaves/clasificacion.png"><span>Clasificación</span><br>
+        <p class="descripcion"><b>Reino:</b> Animalia<br>
+		<b>Phylum:</b> Chordata<br>
+		<b>Clase:</b> Aves<br>
+		<b>Orden:</b> Falconiformes<br>
+		<b>Familia:</b>  Cathartidae<br>
+		<b>Género:</b> Vultur<br>
+		<b>Especie:</b> Vultur gryphus<p><br>
+        <img src="img/Iaves/distribucion.png"><span>Distribución geográfica</span><br>
+        <p class="descripcion">Su distribución comprende la mayor parte del occidente de América del Sur en las montañas y desiertos que van desde el occidente de Venezuela hasta Tierra del Fuego. Los cóndores andinos se encuentran en Colombia, Bolivia, Ecuador, Perú, Chile y Argentina.<p><br>
+        <img src="img/Iaves/habitat.png"><span>Habitat</span><br>
+        <p class="descripcion">Habitan en las montañas costeras y hábitats de montaña en la Cordillera de los Andes. Se localizan en altitudes de hasta 5500 msnm. Prefieren zonas con espacios abiertos que ayudan en la detección de su alimento. Anidan en acantilados en pequeñas salientes rocosas o cuevas.<p><br>
+        <img src="img/Iaves/alimentacion.png"><span>Alimentación</span><br>
+         <p class="descripcion">Son principalmente carroñeros, pero se ha observado que cazan algunas aves y conejos. No presentan técnicas de caza bien desarrolladas, aunque pueden perseguir y agarrar presas vivas, en cuyo caso comienzan a alimentarse antes de que el animal haya muerto. Sostienen la presa parados sobre ella, ya que carecen de las garras prensiles fuertes que se encuentran en la mayoría de las aves rapaces.<p><br>
+        <img src="img/Iaves/reproduccion.png"><span>Reproducción</span><br>
+         <p class="descripcion">La mayoría de los cóndores andinos no construyen nidos. Ponen un solo huevo en bordes de acantilados. Algunos individuos colectan y ubican varitas y pequeños palos alrededor de la cornisa. Los huevos son de color blanco azulado, pesan aproximadamente 280 g, y miden entre 7,6 y 10,1 cm de longitud. El huevo es incubado durante 54 a 58 días, después de los cuales eclosiona un polluelo ciego, sin los conductos auditivos abiertos, sin plumas y con una movilidad muy limitada (altricial). Los polluelos son cuidados por ambos padres hasta que abandonan el nido a los 6 o 7 meses de edad, y permanecen con sus padres hasta los 2 años de edad, o cuando la pareja se reproduzca de nuevo. Los jóvenes alcanzan la madurez sexual entre los 6 y los 11 años de edad.<p><br>
+        <img src="img/Iaves/comportamiento.png"><span>Comportamiento</span><br>
+         <p class="descripcion">Tienden a desplazarse en bandadas y a veces anidan en colonias. Son nómadas cuando el alimento es escaso, pero son sedentarios si el alimento abunda. Se alimentan al atardecer y viajan por la noche, aunque la mayoría de las actividades las realizan durante el día.<p><br>
+        <img src="img/Iaves/conservacion.png"><span>Estado de conservación</span><br>
+         <p class="descripcion">Casi amenazada (Near threatened–IUCN).<p><br>
+        <img src="img/Iaves/amenazas.png"><span>Amenazas</span>
+         <p class="descripcion">Son altamente vulnerables a la persecución humana debida a supuestos ataques a ganado. En Argentina los cóndores son altamente dependientes de los cadáveres de herbívoros exóticos, que constituyen el 98,5% de su dieta, que los hace vulnerables a los cambios en la cría de ganado. La competencia interespecífica por alimento con los buitres negros Coragyps atratus, que recientemente han comenzado a ocupar los mismos lugares, puede tener un efecto perjudicial sobre las poblaciones de cóndor andino.<p><br>
+         </p>       
+</div>
+
+
+<div data-role="collapsible" data-theme="c" data-content-theme="a" data-expanded-icon="carat-u" data-collapsed-icon="carat-d" data-iconpos="right">
+    	<h4><img src="img/Aves/img_09.png" align="absmiddle"> Cotorra carisucia</h4>
+         <p>
+         <img class="imgAve" src="img/Aves/img_09.jpg"><br> 
+                            <img src="img/Iaves/nombre.png"><span>Nombre común</span><br>
+        <p class="descripcion">Cotorra carisucia (Esp) – Brown-throated Parakeet (Eng)<p><br>
+        <img src="img/Iaves/clasificacion.png"><span>Clasificación</span><br>
+        <p class="descripcion"><b>Reino:</b> Animalia<br>
+		<b>Phylum:</b> Chordata<br>
+		<b>Clase:</b> Aves<br>
+		<b>Orden:</b> Psittaciformes<br>
+		<b>Familia:</b>  Psittacidae<br>
+		<b>Género:</b> Aratinga<br>
+		<b>Especie:</b> Aratinga pertinax<p><br>
+        <img src="img/Iaves/distribucion.png"><span>Distribución geográfica</span><br>
+        <p class="descripcion">Habitan parte de Centroamérica (Costa Rica y Panamá) y norte de Suramérica.<p><br>
+        <img src="img/Iaves/habitat.png"><span>Habitat</span><br>
+        <p class="descripcion">Habitan principalmente en sabanas, espacios semi abiertos con presencia de cactus y acacias, bosques deciduos, manglares y zonas agrícolas con palmas y otras plantas.<p><br>
+        <img src="img/Iaves/alimentacion.png"><span>Alimentación</span><br>
+         <p class="descripcion">Consumen semillas, frutas, nueces, flores y ocasionalmente insectos.<p><br>
+        <img src="img/Iaves/reproduccion.png"><span>Reproducción</span><br>
+         <p class="descripcion">Sus posturas varían entre 2 y 7 huevos que eclosionan después de ser incubados 37 días por la hembra. Anidan en cavidades de árboles.<p><br>
+        <img src="img/Iaves/comportamiento.png"><span>Comportamiento</span><br>
+         <p class="descripcion">Son monógamas, muy sociales, pueden ser observadas volando y alimentándose en parejas o grupos pequeños. Forman grupos reproductivos de hasta 7 parejas.<p><br>
+        <img src="img/Iaves/conservacion.png"><span>Estado de conservación</span><br>
+         <p class="descripcion">Preocupación menor (Least concern–IUCN).<p><br>
+        <img src="img/Iaves/amenazas.png"><span>Amenazas</span>
+         <p class="descripcion">Tráfico ilegal y destrucción de hábitat.<p><br>
+         </p>      
+</div>
+
+
+<div data-role="collapsible" data-theme="c" data-content-theme="a" data-expanded-icon="carat-u" data-collapsed-icon="carat-d" data-iconpos="right">
+    	<h4><img src="img/Aves/img_10.png" align="absmiddle"> Emú</h4>
+           <p>
+         <img class="imgAve" src="img/Aves/img_10.jpg"><br> 
+                                     <img src="img/Iaves/nombre.png"><span>Nombre común</span><br>
+        <p class="descripcion">Emú (Esp) – Emu (Eng)<p><br>
+        <img src="img/Iaves/clasificacion.png"><span>Clasificación</span><br>
+        <p class="descripcion"><b>Reino:</b> Animalia<br>
+		<b>Phylum:</b> Chordata<br>
+		<b>Clase:</b> Aves<br>
+		<b>Orden:</b> Struthioniformes<br>
+		<b>Familia:</b>  Dromaiidae<br>
+		<b>Género:</b> Dromaius<br>
+		<b>Especie:</b> Dromaius novaehollandiae<p><br>
+        <img src="img/Iaves/distribucion.png"><span>Distribución geográfica</span><br>
+        <p class="descripcion">Dromaius novaehollandiae<p><br>
+        <img src="img/Iaves/habitat.png"><span>Habitat</span><br>
+        <p class="descripcion">Viven en bosques, matorrales del desierto y arenales. Se encuentran en zonas desérticas sólo después de que las lluvias provocan el crecimiento de hierbas y pastos y hacen florecer los arbustos.<p><br>
+        <img src="img/Iaves/alimentacion.png"><span>Alimentación</span><br>
+         <p class="descripcion">Consumen las partes de las plantas que tienen más concentración de nutrientes: semillas, frutos, flores y brotes jóvenes. También se alimentan de insectos y pequeños vertebrados cuando les son fáciles de conseguir. Los emús ingieren piedras de gran tamaño - hasta de 45 gramos - para ayudar a sus mollejas a moler los alimentos. También suelen comer carbón.<p><br>
+        <img src="img/Iaves/reproduccion.png"><span>Reproducción</span><br>
+         <p class="descripcion">El patrón reproductivo de los emús consiste en que las hembras se reproducen con varios machos, y estos machos son los que tienen la plena responsabilidad de la incubación y el cuidado de las crías. Antes de la cópula, la hembra emite sonidos como golpes de tambor, y el macho comienza a construir un nido en su territorio en el que la hembra se le unirá más tarde. El período de incubación es de 56 días. La pareja permanece en el mismo territorio durante cinco meses antes de que comience la incubación. El nido es una depresión poco profunda situada generalmente al lado de un arbusto y está hecho de hojas, hierbas y cortezas. Generalmente tienen entre 15 y 25 huevos, los cuales provienen de varias hembras. Durante el período de incubación, el macho no se alimenta, bebe o defeca. Una vez que el macho empieza a incubar, muchas hembras se alejan, en ocasiones se se aparean con otros machos y ponen nuevamente. Algunas pocas se quedan para defender al macho en el nido. Los machos son agresivos cuando salen los pichones, expulsando a la hembra y atacando a los humanos que se acerquen. Los polluelos pesan entre 440 y 500 g. Después de 5 a 7 meses, el vínculo entre padres y jóvenes se rompe y el macho puede estar disponible para la próxima temporada de anidación. Entre los dos y tres años de edad, los Emús alcanzan su madurez y son capaces de reproducirse. <p><br>
+        <img src="img/Iaves/comportamiento.png"><span>Comportamiento</span><br>
+         <p class="descripcion">Estos animales viajan principalmente en parejas, y si bien pueden formar a bandadas enormes, se trata de un comportamiento atípico que surge de la necesidad común de avanzar hacia las fuentes de alimentos. Se ha demostrado que viajan largas distancias para llegar a áreas de alimentación, también son capaces de nadar cuando es necesario, a pesar de que rara vez lo hacen, a menos que el área se inunde o tengan que cruzar un río. Duermen durante la noche, aunque no lo hacen de forma continua, pueden despertar y levantarse hasta ocho veces por noche para alimentarse o defecar.<p><br>
+        <img src="img/Iaves/conservacion.png"><span>Estado de conservación</span><br>
+         <p class="descripcion">Preocupación menor (Least concern–IUCN).<p><br>
+        <img src="img/Iaves/amenazas.png"><span>Amenazas</span>
+         <p class="descripcion">No se presentan amenazas graves para la especie, aunque algunos agricultores los consideran plaga.<p><br>
+         </p>    
+</div>
+
+
+<div data-role="collapsible" data-theme="c" data-content-theme="a" data-expanded-icon="carat-u" data-collapsed-icon="carat-d" data-iconpos="right">
+    	<h4><img src="img/Aves/img_11.png" align="absmiddle"> Faisán plateado</h4>
+        <p>
+         <img class="imgAve" src="img/Aves/img_11.jpg"><br> 
+                                     <img src="img/Iaves/nombre.png"><span>Nombre común</span><br>
+        <p class="descripcion">Faisán plateado (Esp) – Silver Pheasant (Eng)<p><br>
+        <img src="img/Iaves/clasificacion.png"><span>Clasificación</span><br>
+        <p class="descripcion"><b>Reino:</b> Animalia<br>
+		<b>Phylum:</b> Chordata<br>
+		<b>Clase:</b> Aves<br>
+		<b>Orden:</b> Galliformes<br>
+		<b>Familia:</b>  Phasianidae<br>
+		<b>Género:</b> Lophura<br>
+		<b>Especie:</b> Lophura nycthemera<p><br>
+        <img src="img/Iaves/distribucion.png"><span>Distribución geográfica</span><br>
+        <p class="descripcion">Es una especie nativa de países asiáticos (especialmente del sudeste) Camboya, China, Laos, Myanmar, Tailandia, Vietnam.<p><br>
+        <img src="img/Iaves/habitat.png"><span>Habitat</span><br>
+        <p class="descripcion">Ocupan diversos hábitats, incluyendo praderas y bosques de bambú, tanto de hoja perenne como caducifolios en elevaciones que van hasta los 1000 msnm. Se ven a menudo en las zonas más abiertas en los bordes del bosque, pero raramente en bosques densos.<p><br>
+        <img src="img/Iaves/alimentacion.png"><span>Alimentación</span><br>
+         <p class="descripcion">Se alimentan principalmente de semillas y frutos, pero también consume algunos invertebrados.<p><br>
+        <img src="img/Iaves/reproduccion.png"><span>Reproducción</span><br>
+         <p class="descripcion">Elaboran sus nidos sobre el suelo. Las nidadas contienen de 6 a 9 huevos, a veces hasta 12, probablemente establecidas por más de una hembra. Los machos son polígamos. Los polluelos eclosionan durante la estación húmeda. En cautiverio, la incubación dura unos 25-26 días. Los polluelos son precoces y empiezan a alimentarse muy pronto. Los padres sólo tienen que guiarlos hacia las fuentes de alimentos, y protegerlos de los depredadores. Los polluelos están cubiertos de un plumaje marrón abajo muy críptico, proporcionándoles buen camuflaje fuera del nido.<p><br>
+        <img src="img/Iaves/comportamiento.png"><span>Comportamiento</span><br>
+         <p class="descripcion">Es uno de los pocos faisanes que tienen una sola pareja durante toda su vida (monógamos). En cautiverio no demuestra temor alguno ante los humanos, pero suelen ser agresivos con los cuidadores y las hembras.<p><br>
+        <img src="img/Iaves/conservacion.png"><span>Estado de conservación</span><br>
+         <p class="descripcion">Preocupación menor (Least concern–IUCN).<p><br>
+        <img src="img/Iaves/amenazas.png"><span>Amenazas</span>
+         <p class="descripcion">Degradación y pérdida de hábitat.<p><br>
+         </p>       
+</div>
+
+
+<div data-role="collapsible" data-theme="c" data-content-theme="a" data-expanded-icon="carat-u" data-collapsed-icon="carat-d" data-iconpos="right">
+    	<h4><img src="img/Aves/img_12.png" align="absmiddle"> Galán</h4>
+       <p>
+         <img class="imgAve" src="img/Aves/img_12.jpg"><br> 
+                                     <img src="img/Iaves/nombre.png"><span>Nombre común</span><br>
+        <p class="descripcion">Galán, Alcaraván (Esp) – Double-striped Thick-knee (Eng)<p><br>
+        <img src="img/Iaves/clasificacion.png"><span>Clasificación</span><br>
+        <p class="descripcion"><b>Reino:</b> Animalia<br>
+		<b>Phylum:</b> Chordata<br>
+		<b>Clase:</b> Aves<br>
+		<b>Orden:</b> Charadriiformes<br>
+		<b>Familia:</b>  Burhinidae<br>
+		<b>Género:</b> Burhinus<br>
+		<b>Especie:</b> Burhinus bistriatus<p><br>
+        <img src="img/Iaves/distribucion.png"><span>Distribución geográfica</span><br>
+        <p class="descripcion">Habitan desde el sur de México hasta Colombia, Venezuela y el norte de Brasil. También se presentan en La Península Española y algunas de las islas venezolanas, es raro en Trinidad y Tobago y Curazao.<p><br>
+        <img src="img/Iaves/habitat.png"><span>Habitat</span><br>
+        <p class="descripcion">Praderas áridas, sabanas y otros hábitats secos y abiertos.<p><br>
+        <img src="img/Iaves/alimentacion.png"><span>Alimentación</span><br>
+         <p class="descripcion">Son omnívoros, se alimentan de grandes insectos, gusanos, escorpiones, caracoles, pequeños reptiles y ranas, también de algunas semillas y brotes.<p><br>
+        <img src="img/Iaves/reproduccion.png"><span>Reproducción</span><br>
+         <p class="descripcion">Anidan en zonas desnudas y despejadas del suelo donde ponen dos huevos de color marrón oliva con manchas de color negro, los cuales son incubados por ambos adultos, cuya eclosión tarda entre 25 y 27 días. Los polluelos son precoces y abandonan el nido rápidamente.<p><br>
+        <img src="img/Iaves/comportamiento.png"><span>Comportamiento</span><br>
+         <p class="descripcion">Es una especie de hábitos preferentemente nocturnos y crepusculares. Son monógamos y forman grupos dispersos. Son muy temerosos y suelen paralizarse al sentir temor.<p><br>
+        <img src="img/Iaves/conservacion.png"><span>Estado de conservación</span><br>
+         <p class="descripcion">Preocupación menor (Least concern–IUCN).<p><br>
+        <img src="img/Iaves/amenazas.png"><span>Amenazas</span>
+         <p class="descripcion">Actualmente no se conocen amenazas sustanciales. Las poblaciones parecen ser estables.<p><br>
+         </p>        
+</div>
+
+
+<div data-role="collapsible" data-theme="c" data-content-theme="a" data-expanded-icon="carat-u" data-collapsed-icon="carat-d" data-iconpos="right">
+    	<h4><img src="img/Aves/img_13.png" align="absmiddle"> Gallineta</h4>
+        <p>
+         <img class="imgAve" src="img/Aves/img_13.jpg"><br> 
+                                              <img src="img/Iaves/nombre.png"><span>Nombre común</span><br>
+        <p class="descripcion">Gallina de Guinea, Gallineta (Esp) – Helmeted Guineafowl, Tufted Guineafowl (Eng)<p><br>
+        <img src="img/Iaves/clasificacion.png"><span>Clasificación</span><br>
+        <p class="descripcion"><b>Reino:</b> Animalia<br>
+		<b>Phylum:</b> Chordata<br>
+		<b>Clase:</b> Aves<br>
+		<b>Orden:</b> Galliformes<br>
+		<b>Familia:</b>  Numididae<br>
+		<b>Género:</b> Numida<br>
+		<b>Especie:</b> Numida meleagris<p><br>
+        <img src="img/Iaves/distribucion.png"><span>Distribución geográfica</span><br>
+        <p class="descripcion">Se distribuyen ampliamente en el continente Africano, al sur del Sahara.<p><br>
+        <img src="img/Iaves/habitat.png"><span>Habitat</span><br>
+        <p class="descripcion">Habitan sabanas y bosques.<p><br>
+        <img src="img/Iaves/alimentacion.png"><span>Alimentación</span><br>
+         <p class="descripcion">Su dieta se compone casi completamente de insectos (90%), pero también incluye bayas, semillas y pequeños reptiles.<p><br>
+        <img src="img/Iaves/reproduccion.png"><span>Reproducción</span><br>
+         <p class="descripcion">Eligen una sola pareja para toda la vida. Las hembras ponen entre 12 y 23 huevos, que ella misma incuba entre 24 y 27 días. El nido es un hueco poco profundo en el suelo protegido por vegetación. Ambos padres alimentan y cuidan de los polluelos. Las temporadas de apareamiento corresponden con los patrones de lluvia.<p><br>
+        <img src="img/Iaves/comportamiento.png"><span>Comportamiento</span><br>
+         <p class="descripcion">Son animales muy sociales y emiten bastantes vocalizaciones. Las hembras hacen sonidos que suenan parecido a "cocá", por lo que en algunas partes de Colombia recibe ese nombre. Vive en bandadas de hasta treinta y cinco animales, pero a veces se alimentan en grandes grupos de hasta 1000 individuos. Se perchan desde el atardecer hasta el amanecer. Esta especie puede recorrer hasta 32.2 kilómetros diarios.<p><br>
+        <img src="img/Iaves/conservacion.png"><span>Estado de conservación</span><br>
+         <p class="descripcion">Preocupación menor (Least concern–IUCN).<p><br>
+        <img src="img/Iaves/amenazas.png"><span>Amenazas</span>
+         <p class="descripcion">Cacería por deporte y pérdida de hábitat.<p><br>
+         
+         </p>       
+</div>
+
+
+<div data-role="collapsible" data-theme="c" data-content-theme="a" data-expanded-icon="carat-u" data-collapsed-icon="carat-d" data-iconpos="right">
+    	<h4><img src="img/Aves/img_14.png" align="absmiddle"> Ganso cisne</h4>
+         <p>
+         <img class="imgAve" src="img/Aves/img_14.jpg"><br>
+                                                       <img src="img/Iaves/nombre.png"><span>Nombre común</span><br>
+        <p class="descripcion">Ganso cisne (Esp) – Swan Goose (Eng)<p><br>
+        <img src="img/Iaves/clasificacion.png"><span>Clasificación</span><br>
+        <p class="descripcion"><b>Reino:</b> Animalia<br>
+		<b>Phylum:</b> Chordata<br>
+		<b>Clase:</b> Aves<br>
+		<b>Orden:</b> Anseriformes<br>
+		<b>Familia:</b> Anatidae<br>
+		<b>Género:</b> Anser<br>
+		<b>Especie:</b> Anser cygnoides<p><br>
+        <img src="img/Iaves/distribucion.png"><span>Distribución geográfica</span><br>
+        <p class="descripcion">Esta especie se encuentra naturalmente en Mongolia, el norte de China, parte de Corea, Japón y el sudeste de Rusia.<p><br>
+        <img src="img/Iaves/habitat.png"><span>Habitat</span><br>
+        <p class="descripcion">Estepa, Taiga y valles montanos cerca de cuerpos de agua dulce.<p><br>
+        <img src="img/Iaves/alimentacion.png"><span>Alimentación</span><br>
+         <p class="descripcion">Consumen gran variedad de material vegetal incluyendo pastos, raíces, brotes, tallos, frutos y semillas, entre otros.<p><br>
+        <img src="img/Iaves/reproduccion.png"><span>Reproducción</span><br>
+         <p class="descripcion">Ponen de 5 a 8 huevos que son incubados por la madre aproximadamente 28 días. Se cruzan fácilmente con los gansos domésticos.<p><br>
+        <img src="img/Iaves/comportamiento.png"><span>Comportamiento</span><br>
+         <p class="descripcion">Se reúnen en grandes bandadas antes de migrar a finales de julio..<p><br>
+        <img src="img/Iaves/conservacion.png"><span>Estado de conservación</span><br>
+         <p class="descripcion">Vulnerable (Vulnerable –IUCN).<p><br>
+        <img src="img/Iaves/amenazas.png"><span>Amenazas</span>
+         <p class="descripcion">Cacería, polución y desecación de cuerpos de agua.<p><br> 
+         </p>      
+</div>
+
+
+<div data-role="collapsible" data-theme="c" data-content-theme="a" data-expanded-icon="carat-u" data-collapsed-icon="carat-d" data-iconpos="right">
+    	<h4><img src="img/Aves/img_15.png" align="absmiddle"> Ganso común</h4>
+        <p>
+         <img class="imgAve" src="img/Aves/img_15.jpg"><br>
+         
+          <img src="img/Iaves/nombre.png"><span>Nombre común</span><br>
+        <p class="descripcion">Ganso común (Esp) – Goose (Eng)<p><br>
+        <img src="img/Iaves/clasificacion.png"><span>Clasificación</span><br>
+        <p class="descripcion"><b>Reino:</b> Animalia<br>
+		<b>Phylum:</b> Chordata<br>
+		<b>Clase:</b> Aves<br>
+		<b>Orden:</b> Anseriformes<br>
+		<b>Familia:</b> Anatidae<br>
+		<b>Género:</b> Anser<br>
+		<b>Especie:</b> Anser anser<p><br>
+        <img src="img/Iaves/distribucion.png"><span>Distribución geográfica</span><br>
+        <p class="descripcion">Habitan Eurasia, Groenlandia, Medio Oriente, Asia Continental y Japón. Fueron introducidos en las Islas Malvinas y Australia.<p><br>
+        <img src="img/Iaves/habitat.png"><span>Habitat</span><br>
+        <p class="descripcion">Estepa, Taiga y valles montanos cerca de cuerpos de agua dulce.<p><br>
+        <img src="img/Iaves/alimentacion.png"><span>Alimentación</span><br>
+         <p class="descripcion">Consumen gran variedad de material vegetal, incluyendo pastos, raíces, brotes, tallos, frutos, bulbos y semillas.<p><br>
+        <img src="img/Iaves/reproduccion.png"><span>Reproducción</span><br>
+         <p class="descripcion">Ponen de 4 a 6 huevos que son incubados por la madre aproximadamente 30 días. Se cruzan fácilmente con los gansos domésticos.<p><br>
+        <img src="img/Iaves/comportamiento.png"><span>Comportamiento</span><br>
+         <p class="descripcion">Es una especie altamente gregaria, a excepción de la temporada reproductiva.<p><br>
+        <img src="img/Iaves/conservacion.png"><span>Estado de conservación</span><br>
+         <p class="descripcion">Preocupación menor (Least concern –IUCN).<p><br>
+        <img src="img/Iaves/amenazas.png"><span>Amenazas</span>
+         <p class="descripcion">Cacería, polución y desecación de cuerpos de agua.<p><br> 
+         </p>    
+</div>
+
+
+<div data-role="collapsible" data-theme="c" data-content-theme="a" data-expanded-icon="carat-u" data-collapsed-icon="carat-d" data-iconpos="right">
+    	<h4><img src="img/Aves/img_16.png" align="absmiddle"> Ganso del Orinoco</h4>
+        <p>
+         <img class="imgAve" src="img/Aves/img_16.jpg"><br>
+         
+            
+          <img src="img/Iaves/nombre.png"><span>Nombre común</span><br>
+        <p class="descripcion">Ganso del Orinoco (Esp) – Orinoco Goose (Eng)<p><br>
+        <img src="img/Iaves/clasificacion.png"><span>Clasificación</span><br>
+        <p class="descripcion"><b>Reino:</b> Animalia<br>
+		<b>Phylum:</b> Chordata<br>
+		<b>Clase:</b> Aves<br>
+		<b>Orden:</b> Anseriformes<br>
+		<b>Familia:</b> Anatidae<br>
+		<b>Género:</b> Neochen<br>
+		<b>Especie:</b> Neochen jubata<p><br>
+        <img src="img/Iaves/distribucion.png"><span>Distribución geográfica</span><br>
+        <p class="descripcion">Esta es una especie de amplia distribución en América del Sur, habitando al oriente de la cordillera de los Andes, la parte oriental de Colombia y Venezuela, Ecuador, Guyana, Surinam, Amazonía brasileña, extremo oriental de Perú, Bolivia y Paraguay, hasta el extremo noroccidente de Argentina donde parece que no es nativa y sólo la visita de paso.<p><br>
+        <img src="img/Iaves/habitat.png"><span>Habitat</span><br>
+        <p class="descripcion">Habitan bancos de ríos cubiertos de bosques y claros húmedos, sabanas húmedas y márgenes lodosas y arenosas de humedales de agua dulce de gran tamaño, van desde tierras bajas hasta los 500 msnm ocasionalmente se han encontrado en elevaciones que rondan los 2.600 msnm.<p><br>
+        <img src="img/Iaves/alimentacion.png"><span>Alimentación</span><br>
+         <p class="descripcion">Su alimentación se compone de hierbas y otras plantas que forrajean, también insectos y animales pequeños.<p><br>
+        <img src="img/Iaves/reproduccion.png"><span>Reproducción</span><br>
+         <p class="descripcion">Son muy territoriales durante la época de reproducción. Anidan generalmente en huecos de árboles, muy pocas veces en el suelo. La incubación dura alrededor de un mes, el tamaño de la nidada es de 6 a 10 huevos.<p><br>
+        <img src="img/Iaves/comportamiento.png"><span>Comportamiento</span><br>
+         <p class="descripcion">Se reúnen en bandadas durante el período de muda, de lo contrario permanecen en grupos familiares o parejas. Los machos luchan ferozmente entre si dando golpes con sus alas y emitiendo constantemente fuertes graznidos en la temporada reproductiva.<p><br>
+        <img src="img/Iaves/conservacion.png"><span>Estado de conservación</span><br>
+         <p class="descripcion">Casi amenazada (Near threatened–IUCN).<p><br>
+        <img src="img/Iaves/amenazas.png"><span>Amenazas</span>
+         <p class="descripcion">Principalmente esta especie se ve afectada por la cacería.<p><br>
+         </p>       
+</div>
+
+
+<div data-role="collapsible" data-theme="c" data-content-theme="a" data-expanded-icon="carat-u" data-collapsed-icon="carat-d" data-iconpos="right">
+    	<h4><img src="img/Aves/img_17.png" align="absmiddle"> Grulla coronada</h4>
+        <p>
+         <img class="imgAve" src="img/Aves/img_17.jpg"><br>
+         
+                   <img src="img/Iaves/nombre.png"><span>Nombre común</span><br>
+        <p class="descripcion">Grulla coronada de cuello negro (Esp) – Black Crowned Crane (Eng)<p><br>
+        <img src="img/Iaves/clasificacion.png"><span>Clasificación</span><br>
+        <p class="descripcion"><b>Reino:</b> Animalia<br>
+		<b>Phylum:</b> Chordata<br>
+		<b>Clase:</b> Aves<br>
+		<b>Orden:</b> Gruiformes<br>
+		<b>Familia:</b> Gruidae<br>
+		<b>Género:</b> Balearica<br>
+		<b>Especie:</b> Balearica pavonina<p><br>
+        <img src="img/Iaves/distribucion.png"><span>Distribución geográfica</span><br>
+        <p class="descripcion">Se presentan poblaciones aisladas en diversos países del centro del continente Africano.<p><br>
+        <img src="img/Iaves/habitat.png"><span>Habitat</span><br>
+        <p class="descripcion">Sitios abiertos húmedos, pantanos de aguas dulces, pastizales húmedos y la periferia de cuerpos de agua.<p><br>
+        <img src="img/Iaves/alimentacion.png"><span>Alimentación</span><br>
+         <p class="descripcion">Son omnívoros generalistas, su fuente principal de alimento son cultivos de granos pequeños, también pequeños invertebrados, pequeños vertebrados, algunos insectos como grillos y moscas, moluscos, crustáceos, peces, anfibios, reptiles, semillas, pastos y granos de cereales cultivados como maíz y arroz.<p><br>
+        <img src="img/Iaves/reproduccion.png"><span>Reproducción</span><br>
+         <p class="descripcion">Construyen sus nidos en zonas húmedas con vegetación densa. Las posturas varían entre 2 y 3 huevos.<p><br>
+        <img src="img/Iaves/comportamiento.png"><span>Comportamiento</span><br>
+         <p class="descripcion">Animales diurnos. Forman grandes bandadas en la temporada seca (no reproductiva, se reproducen en la temporada lluviosa Mayo a Diciembre en África occidental y de julio a Enero en África Oriental, con algunas variaciones estacionales), llegando a grupos de cientos de individuos.<p><br>
+        <img src="img/Iaves/conservacion.png"><span>Estado de conservación</span><br>
+         <p class="descripcion">Vulnerable (Vulnerable –IUCN).<p><br>
+        <img src="img/Iaves/amenazas.png"><span>Amenazas</span>
+         <p class="descripcion">Pérdida y degradación de hábitat a través de desecación de cuerpos de agua mediante drenaje y conversión del hábitat para usarlo en agricultura. Cacería y tráfico. Contaminación por pesticidas, entre otras.<p><br>
+         </p>     
+</div>
+
+
+<div data-role="collapsible" data-theme="c" data-content-theme="a" data-expanded-icon="carat-u" data-collapsed-icon="carat-d" data-iconpos="right">
+    	<h4><img src="img/Aves/img_18.png" align="absmiddle"> Guacamaya azul</h4>
+        <p>
+         <img class="imgAve" src="img/Aves/img_18.jpg"><br> 
+         
+                           <img src="img/Iaves/nombre.png"><span>Nombre común</span><br>
+        <p class="descripcion">Guacamaya azul y amarilla (Esp) – Blue-and-yellow Macaw (Eng)<p><br>
+        <img src="img/Iaves/clasificacion.png"><span>Clasificación</span><br>
+        <p class="descripcion"><b>Reino:</b> Animalia<br>
+		<b>Phylum:</b> Chordata<br>
+		<b>Clase:</b> Aves<br>
+		<b>Orden:</b> Psittaciformes<br>
+		<b>Familia:</b> Gruidae<br>
+		<b>Género:</b> Ara<br>
+		<b>Especie:</b> Ara ararauna<p><br>
+        <img src="img/Iaves/distribucion.png"><span>Distribución geográfica</span><br>
+        <p class="descripcion">Su distribución es bastante amplia, comprendiendo Panamá, Colombia, Ecuador, Venezuela, Perú, Brasil, Bolivia, Guayana, Surinam y Guayana Francesa.<p><br>
+        <img src="img/Iaves/habitat.png"><span>Habitat</span><br>
+        <p class="descripcion">Habitan zonas bajas como sabanas, bosques, pantanos y en especial zonas abiertas cerca de ríos.<p><br>
+        <img src="img/Iaves/alimentacion.png"><span>Alimentación</span><br>
+         <p class="descripcion">Su alimentación de basa principalmente en frutos, brotes de hojas, hojas, algunos artrópodos y algunas flores.<p><br>
+        <img src="img/Iaves/reproduccion.png"><span>Reproducción</span><br>
+         <p class="descripcion">Son animales que tienen la misma pareja toda su vida. Anidan en troncos huecos de árboles, sus posturas son de 1 a 3 huevos que son incubados por la hembra durante 28 a 30 días.<p><br>
+        <img src="img/Iaves/comportamiento.png"><span>Comportamiento</span><br>
+         <p class="descripcion">Son animales gregarios, se les puede ver volando en grupos de hasta 100 individuos que se posan a dormir en árboles al llegar el anochecer.<p><br>
+        <img src="img/Iaves/conservacion.png"><span>Estado de conservación</span><br>
+         <p class="descripcion">Preocupación menor (Least concern –IUCN).<p><br>
+        <img src="img/Iaves/amenazas.png"><span>Amenazas</span>
+         <p class="descripcion">Tráfico ilegal.<p><br>
+         </p>       
+</div>
+
+
+<div data-role="collapsible" data-theme="c" data-content-theme="a" data-expanded-icon="carat-u" data-collapsed-icon="carat-d" data-iconpos="right">
+    	<h4><img src="img/Aves/img_19.png" align="absmiddle"> Guacamaya cariseca</h4>
+        <p>
+         <img class="imgAve" src="img/Aves/img_19.jpg"><br>
+         
+                                    <img src="img/Iaves/nombre.png"><span>Nombre común</span><br>
+        <p class="descripcion">Guacamaya cheja, Guacamaya cariseca (Esp) – Chestnut-fronted Macaw (Eng)<p><br>
+        <img src="img/Iaves/clasificacion.png"><span>Clasificación</span><br>
+        <p class="descripcion"><b>Reino:</b> Animalia<br>
+		<b>Phylum:</b> Chordata<br>
+		<b>Clase:</b> Aves<br>
+		<b>Orden:</b> Psittaciformes<br>
+		<b>Familia:</b> Psittacidae<br>
+		<b>Género:</b> Ara<br>
+		<b>Especie:</b> Ara severa<p><br>
+        <img src="img/Iaves/distribucion.png"><span>Distribución geográfica</span><br>
+        <p class="descripcion">Habitan en el norte y centro de Suramérica.<p><br>
+        <img src="img/Iaves/habitat.png"><span>Habitat</span><br>
+        <p class="descripcion">Aunque se encuentran en una amplia variedad de zonas boscosas, evitan tractos grandes de bosque continuo. Sus hábitats pueden alcanzar altitudes de hasta 1000 msnm en pocos lugares.<p><br>
+        <img src="img/Iaves/alimentacion.png"><span>Alimentación</span><br>
+         <p class="descripcion">Pasan la mayor parte del día buscando alimento en las partes más altas de los árboles. Prefieren las frutas, semillas, nueces y brotes de algunas plantas.<p><br>
+        <img src="img/Iaves/reproduccion.png"><span>Reproducción</span><br>
+         <p class="descripcion">Anidan en árboles preferiblemente cercanos al agua. Sus posturas consisten entre 2 y 4 huevos que eclosionan después de 24-26 días.<p><br>
+        <img src="img/Iaves/comportamiento.png"><span>Comportamiento</span><br>
+         <p class="descripcion">Se encuentran generalmente en grupos que no sobrepasan los 13 individuos.<p><br>
+        <img src="img/Iaves/conservacion.png"><span>Estado de conservación</span><br>
+         <p class="descripcion">Preocupación menor (Least concern –IUCN).<p><br>
+        <img src="img/Iaves/amenazas.png"><span>Amenazas</span>
+         <p class="descripcion">Tráfico ilegal y destrucción de hábitat.<p><br>
+         
+         </p>    
+</div>
+
+
+<div data-role="collapsible" data-theme="c" data-content-theme="a" data-expanded-icon="carat-u" data-collapsed-icon="carat-d" data-iconpos="right">
+    	<h4><img src="img/Aves/img_21.png" align="absmiddle"> Guacamaya escarlata</h4>
+         <p>
+         <img class="imgAve" src="img/Aves/img_20.jpg"><br>
+         
+                                             <img src="img/Iaves/nombre.png"><span>Nombre común</span><br>
+        <p class="descripcion">Guacamaya escarlata, Guacamaya bandera (Esp) – Scarlet Macaw (Eng)<p><br>
+        <img src="img/Iaves/clasificacion.png"><span>Clasificación</span><br>
+        <p class="descripcion"><b>Reino:</b> Animalia<br>
+		<b>Phylum:</b> Chordata<br>
+		<b>Clase:</b> Aves<br>
+		<b>Orden:</b> Psittaciformes<br>
+		<b>Familia:</b> Psittacidae<br>
+		<b>Género:</b> Ara<br>
+		<b>Especie:</b> Ara macao<p><br>
+        <img src="img/Iaves/distribucion.png"><span>Distribución geográfica</span><br>
+        <p class="descripcion">Posiblemente extinta en algunos países de Centroamérica. Habitan principalmente el norte y centro de Suramérica.<p><br>
+        <img src="img/Iaves/habitat.png"><span>Habitat</span><br>
+        <p class="descripcion">Habitan en el dosel (la parte más alta de los árboles que conforman los bosques) de bosques húmedos por debajo de los 1000 msnm.<p><br>
+        <img src="img/Iaves/alimentacion.png"><span>Alimentación</span><br>
+         <p class="descripcion">Principalmente se alimentan de frutos y nueces, pero ocasionalmente consumen néctar y flores. Ocasionalmente consumen arcilla en barrancos cerca de ríos para colaborar en la digestión de algunas sustancias provenientes de frutos inmaduros.<p><br>
+        <img src="img/Iaves/reproduccion.png"><span>Reproducción</span><br>
+         <p class="descripcion">Son animales que tienen la misma pareja toda su vida. Anidan en troncos huecos de árboles, sus posturas son de 2 a 4 huevos que son incubados por la hembra durante 24 días aproximadamente.<p><br>
+        <img src="img/Iaves/comportamiento.png"><span>Comportamiento</span><br>
+         <p class="descripcion">Se ven en parejas, las cuales se reúnen en grandes bandadas para pasar la noche.<p><br>
+        <img src="img/Iaves/conservacion.png"><span>Estado de conservación</span><br>
+         <p class="descripcion">Preocupación menor (Least concern –IUCN).<p><br>
+        <img src="img/Iaves/amenazas.png"><span>Amenazas</span>
+         <p class="descripcion">Tráfico ilegal y destrucción de hábitat.<p><br>
+         </p>      
+</div>
+
+
+<div data-role="collapsible" data-theme="c" data-content-theme="a" data-expanded-icon="carat-u" data-collapsed-icon="carat-d" data-iconpos="right">
+    	<h4><img src="img/Aves/img_22.png" align="absmiddle"> Guacamaya roja</h4>
+        <p>
+         <img class="imgAve" src="img/Aves/img_21.jpg"><br>
+         
+                                                      <img src="img/Iaves/nombre.png"><span>Nombre común</span><br>
+        <p class="descripcion">Guacamaya roja de alas verdes (Esp) – Red-and-green Macaw, Green-winged Macaw (Eng)<p><br>
+        <img src="img/Iaves/clasificacion.png"><span>Clasificación</span><br>
+        <p class="descripcion"><b>Reino:</b> Animalia<br>
+		<b>Phylum:</b> Chordata<br>
+		<b>Clase:</b> Aves<br>
+		<b>Orden:</b> Psittaciformes<br>
+		<b>Familia:</b> Psittacidae<br>
+		<b>Género:</b> Ara<br>
+		<b>Especie:</b> Ara chloroptera<p><br>
+        <img src="img/Iaves/distribucion.png"><span>Distribución geográfica</span><br>
+        <p class="descripcion">Ampliamente distribuida en los países del norte y centro de Sur América. Solo ausente en Chile, Uruguay y Argentina.<p><br>
+        <img src="img/Iaves/habitat.png"><span>Habitat</span><br>
+        <p class="descripcion">Habitan en zonas bajas como sabanas, bosques, pantanos y en especial en zonas abiertas cerca de ríos.<p><br>
+        <img src="img/Iaves/alimentacion.png"><span>Alimentación</span><br>
+         <p class="descripcion">Su alimentación de basa principalmente en frutos, brotes de hojas, hojas y flores.<p><br>
+        <img src="img/Iaves/reproduccion.png"><span>Reproducción</span><br>
+         <p class="descripcion">Son animales que tienen la misma pareja toda su vida. Anidan en troncos huecos de árboles, sus posturas son de 2 a 3 huevos que son incubados por la hembra durante 28 a 30 días.<p><br>
+        <img src="img/Iaves/comportamiento.png"><span>Comportamiento</span><br>
+         <p class="descripcion">Son animales gregarios, se les puede ver volando en grupos de hasta 100 individuos que se posan a dormir en árboles al llegar el anochecer.<p><br>
+        <img src="img/Iaves/conservacion.png"><span>Estado de conservación</span><br>
+         <p class="descripcion">Preocupación menor (Least concern –IUCN).<p><br>
+        <img src="img/Iaves/amenazas.png"><span>Amenazas</span>
+         <p class="descripcion">Tráfico ilegal y destrucción de hábitat.<p><br>
+         </p>   
+</div>
+
+
+<div data-role="collapsible" data-theme="c" data-content-theme="a" data-expanded-icon="carat-u" data-collapsed-icon="carat-d" data-iconpos="right">
+    	<h4><img src="img/Aves/img_23.png" align="absmiddle"> Guacamaya verde limón</h4>
+        <p>
+         <img class="imgAve" src="img/Aves/img_22.jpg"><br>
+         
+         
+          <img src="img/Iaves/nombre.png"><span>Nombre común</span><br>
+        <p class="descripcion">Guacamaya verde limón (Esp) – Great Green Macaw (Eng)<p><br>
+        <img src="img/Iaves/clasificacion.png"><span>Clasificación</span><br>
+        <p class="descripcion"><b>Reino:</b> Animalia<br>
+		<b>Phylum:</b> Chordata<br>
+		<b>Clase:</b> Aves<br>
+		<b>Orden:</b> Psittaciformes<br>
+		<b>Familia:</b> Psittacidae<br>
+		<b>Género:</b> Ara<br>
+		<b>Especie:</b> Ara ambigua<p><br>
+        <img src="img/Iaves/distribucion.png"><span>Distribución geográfica</span><br>
+        <p class="descripcion">Se encuentra desde Honduras, pasando por Nicaragua, Costa Rica, Panamá, hasta el noroccidente de Colombia (departamentos de Córdoba, Antioquia y Chocó) y 2 poblaciones aisladas en Ecuador.<p><br>
+        <img src="img/Iaves/habitat.png"><span>Habitat</span><br>
+        <p class="descripcion">Suelen habitar tierras húmedas bajas, especialmente bosques deciduos. Son más abundantes por debajo de los 600 msnm, pero es posible encontrarlas hasta los 1500 msnm.<p><br>
+        <img src="img/Iaves/alimentacion.png"><span>Alimentación</span><br>
+         <p class="descripcion">Se alimentan de almendros de montaña, diferentes tipos de semillas y frutos.<p><br>
+        <img src="img/Iaves/reproduccion.png"><span>Reproducción</span><br>
+         <p class="descripcion">Son animales monógamos, tienen la misma pareja toda la vida. Anidan en troncos huecos de árboles, sus posturas son de 2 a 3 huevos que son incubados por la hembra durante 30 días.<p><br>
+        <img src="img/Iaves/comportamiento.png"><span>Comportamiento</span><br>
+         <p class="descripcion">Son animales gregarios, se les puede ver volar en grupos entre 18 y 40 individuos.<p><br>
+        <img src="img/Iaves/conservacion.png"><span>Estado de conservación</span><br>
+         <p class="descripcion">En peligro (Endangered –IUCN).<p><br>
+        <img src="img/Iaves/amenazas.png"><span>Amenazas</span>
+         <p class="descripcion">Pérdida de hábitat por deforestación, colonización, agricultura y tráfico ilegal.<p><br>
+         </p>    
+</div>
+
+
+<div data-role="collapsible" data-theme="c" data-content-theme="a" data-expanded-icon="carat-u" data-collapsed-icon="carat-d" data-iconpos="right">
+    	<h4><img src="img/Aves/img_24.png" align="absmiddle"> Guacharaca caribeña</h4>
+        <p>
+         <img class="imgAve" src="img/Aves/img_23.jpg"><br>
+         
+         <img src="img/Iaves/nombre.png"><span>Nombre común</span><br>
+        <p class="descripcion">Guacharaca Caribeña (Esp) – Chestnut-winged Chachalaca (Eng)<p><br>
+        <img src="img/Iaves/clasificacion.png"><span>Clasificación</span><br>
+        <p class="descripcion"><b>Reino:</b> Animalia<br>
+		<b>Phylum:</b> Chordata<br>
+		<b>Clase:</b> Aves<br>
+		<b>Orden:</b> Galliformes<br>
+		<b>Familia:</b> Cracidae<br>
+		<b>Género:</b> Ortalis<br>
+		<b>Especie:</b> Ortalis garrula<p><br>
+        <img src="img/Iaves/distribucion.png"><span>Distribución geográfica</span><br>
+        <p class="descripcion">Es una especie endémica de Colombia, su distribución se restringe al noroccidente de Colombia.<p><br>
+        <img src="img/Iaves/habitat.png"><span>Habitat</span><br>
+        <p class="descripcion">Viven en matorrales densos, en bosques deciduos achaparrados, bosques en crecimiento secundario, matorrales áridos, bosques a orilla de ríos y manglares. Es común en bordes de bosque húmedo en la base norte de los Andes.<p><br>
+        <img src="img/Iaves/alimentacion.png"><span>Alimentación</span><br>
+         <p class="descripcion">Su dieta se compone principalmente de frutas (Simaruba glauca, Hamelia patens, Psidium guajava, Cecropia sp y Phytolacca rivinoides.) y hojas de plantas como Vernonia patens y Oyedaea verbesinoides.<p><br>
+        <img src="img/Iaves/reproduccion.png"><span>Reproducción</span><br>
+         <p class="descripcion">Las posturas constan de 3 huevos blancos de textura áspera cuya incubación tarda aproximadamente 26 días.<p><br>
+        <img src="img/Iaves/comportamiento.png"><span>Comportamiento</span><br>
+         <p class="descripcion">Animales bastante ruidosos, orman grupos grandes de más de 6 individuos. Son principalmente arbóreas, bajan con poca frecuencia al suelo en búsqueda de alimento.<p><br>
+        <img src="img/Iaves/conservacion.png"><span>Estado de conservación</span><br>
+         <p class="descripcion">Preocupación menor (Least concern–IUCN).<p><br>
+        <img src="img/Iaves/amenazas.png"><span>Amenazas</span>
+         <p class="descripcion">La principal amenaza que enfrenta esta especie es la cacería.<p><br>
+         </p>     
+</div>
+
+
+<div data-role="collapsible" data-theme="c" data-content-theme="a" data-expanded-icon="carat-u" data-collapsed-icon="carat-d" data-iconpos="right">
+    	<h4><img src="img/Aves/img_25.png" align="absmiddle"> Ibis</h4>
+        <p>
+         <img class="imgAve" src="img/Aves/img_24.jpg"><br> 
+         
+         <img src="img/Iaves/nombre.png"><span>Nombre común</span><br>
+        <p class="descripcion">Ibis Rojo (Esp) – Red Ibis (Eng)<p><br>
+        <img src="img/Iaves/clasificacion.png"><span>Clasificación</span><br>
+        <p class="descripcion"><b>Reino:</b> Animalia<br>
+		<b>Phylum:</b> Chordata<br>
+		<b>Clase:</b> Aves<br>
+		<b>Orden:</b> Ciconiiformes<br>
+		<b>Familia:</b> Threskiornithidae<br>
+		<b>Género:</b> Eudocimus<br>
+		<b>Especie:</b> Eudocimus ruber<p><br>
+        <img src="img/Iaves/distribucion.png"><span>Distribución geográfica</span><br>
+        <p class="descripcion">Se encuentra en el norte de América del Sur, desde Venezuela hasta el oriente de Brasil.<p><br>
+        <img src="img/Iaves/habitat.png"><span>Habitat</span><br>
+        <p class="descripcion">Habitan en ambientes pantanosos como planicies pantanosas y bahías poco profundas.<p><br>
+        <img src="img/Iaves/alimentacion.png"><span>Alimentación</span><br>
+         <p class="descripcion">Crustáceos e invertebrados acuáticos como cangrejos de río componen la mayor parte de la dieta, junto con los insectos acuáticos. También consume ranas, moluscos, serpientes y peces pequeños.<p><br>
+        <img src="img/Iaves/reproduccion.png"><span>Reproducción</span><br>
+         <p class="descripcion">Ponen por lo general de 3 a 5 huevos por nidada. La incubación dura entre 19 y 23 días. Los polluelos abandonan el nido después de 35 días y son independientes a los 75 días.<p><br>
+        <img src="img/Iaves/comportamiento.png"><span>Comportamiento</span><br>
+         <p class="descripcion">Es una especie bastante social, tanto durante la anidación como en la búsqueda de alimentos. Vuelan en grandes bandadas entre los diferentes sitios de alimentación y de descanso.<p><br>
+        <img src="img/Iaves/conservacion.png"><span>Estado de conservación</span><br>
+         <p class="descripcion">Preocupación menor (Least concern–IUCN).<p><br>
+        <img src="img/Iaves/amenazas.png"><span>Amenazas</span>
+         <p class="descripcion">El exceso de caza, la recolección de los huevos y la venta de jóvenes como animales de compañía, además de la pérdida y destrucción del hábitat afectan los tamaños poblacionales.<p><br>
+         </p>
+</div>
+
+
+<div data-role="collapsible" data-theme="c" data-content-theme="a" data-expanded-icon="carat-u" data-collapsed-icon="carat-d" data-iconpos="right">
+    	<h4><img src="img/Aves/img_26.png" align="absmiddle"> Lora cariamarilla</h4>
+        <p>
+         <img class="imgAve" src="img/Aves/img_25.jpg"><br> 
+         
+         <img src="img/Iaves/nombre.png"><span>Nombre común</span><br>
+        <p class="descripcion">Lora cariamarilla (Esp) - Orange-winged Amazon, Orange-winged Parrot (Eng)<p><br>
+        <img src="img/Iaves/clasificacion.png"><span>Clasificación</span><br>
+        <p class="descripcion"><b>Reino:</b> Animalia<br>
+		<b>Phylum:</b> Chordata<br>
+		<b>Clase:</b> Aves<br>
+		<b>Orden:</b> Psittaciformes<br>
+		<b>Familia:</b> Psittacidae<br>
+		<b>Género:</b> Amazona<br>
+		<b>Especie:</b> Amazona amazonica<p><br>
+        <img src="img/Iaves/distribucion.png"><span>Distribución geográfica</span><br>
+        <p class="descripcion">La especie presenta una amplia distribución en Bolivia, Brasil, Colombia, Ecuador, Guayana Francesa, Guyana, Perú, Surinam, Trinidad y Tobago y Venezuela. Introducida en Puerto Rico.<p><br>
+        <img src="img/Iaves/habitat.png"><span>Habitat</span><br>
+        <p class="descripcion">Bosques húmedos tropicales y subtropicales, pantanos.<p><br>
+        <img src="img/Iaves/alimentacion.png"><span>Alimentación</span><br>
+         <p class="descripcion">Se alimentan principalmente de frutos y semillas de plantas como palmas y cacao.<p><br>
+        <img src="img/Iaves/reproduccion.png"><span>Reproducción</span><br>
+         <p class="descripcion">Anidan en cavidades de árboles y sus posturas varían entre tres y cuatro huevos. Las hembras incuban los huevos alrededor de 26 días y los polluelos abandonan el nido aproximadamente 60 días después de salir del huevo.<p><br>
+        <img src="img/Iaves/comportamiento.png"><span>Comportamiento</span><br>
+         <p class="descripcion">Son aves bastante ruidosas. Se posan en grupos grandes principalmente en palmas especialmente al amanecer y al anochecer.<p><br>
+        <img src="img/Iaves/conservacion.png"><span>Estado de conservación</span><br>
+         <p class="descripcion">Preocupación menor (Least concern –IUCN).<p><br>
+        <img src="img/Iaves/amenazas.png"><span>Amenazas</span>
+         <p class="descripcion">Tráfico ilegal.<p><br>
+         </p>     
+</div>
+
+
+<div data-role="collapsible" data-theme="c" data-content-theme="a" data-expanded-icon="carat-u" data-collapsed-icon="carat-d" data-iconpos="right">
+    	<h4><img src="img/Aves/img_27.png" align="absmiddle"> Lora frentiroja</h4>
+        <p>
+         <img class="imgAve" src="img/Aves/img_26.jpg"><br> 
+         
+         <img src="img/Iaves/nombre.png"><span>Nombre común</span><br>
+        <p class="descripcion">Lora frentiroja (Esp) - Red-lored Amazon, Red-lored Parrot (Eng)<p><br>
+        <img src="img/Iaves/clasificacion.png"><span>Clasificación</span><br>
+        <p class="descripcion"><b>Reino:</b> Animalia<br>
+		<b>Phylum:</b> Chordata<br>
+		<b>Clase:</b> Aves<br>
+		<b>Orden:</b> Psittaciformes<br>
+		<b>Familia:</b> Psittacidae<br>
+		<b>Género:</b> Amazona<br>
+		<b>Especie:</b> Amazona autumnalis<p><br>
+        <img src="img/Iaves/distribucion.png"><span>Distribución geográfica</span><br>
+        <p class="descripcion">Se distribuye desde el oriente de México hasta el sur de Ecuador. Existe una población aislada en el centro de Brasil.<p><br>
+        <img src="img/Iaves/habitat.png"><span>Habitat</span><br>
+        <p class="descripcion">Bosques húmedos tropicales y bosques semidesiduos.<p><br>
+        <img src="img/Iaves/alimentacion.png"><span>Alimentación</span><br>
+         <p class="descripcion">Se alimentan principalmente de frutos, semillas y nueces.<p><br>
+        <img src="img/Iaves/reproduccion.png"><span>Reproducción</span><br>
+         <p class="descripcion">Anidan en cavidades de árboles, las posturas son de tres a cuatro huevos que son incubados aproximadamente 26 días y los polluelos abandonan el nido aproximadamente 70 días después de la eclosión.<p><br>
+        <img src="img/Iaves/comportamiento.png"><span>Comportamiento</span><br>
+         <p class="descripcion">Son aves bastante ruidosas. Se posan en grupos grandes principalmente en palmas especialmente al amanecer y al anochecer.<p><br>
+        <img src="img/Iaves/conservacion.png"><span>Estado de conservación</span><br>
+         <p class="descripcion">Preocupación menor (Least concern –IUCN).<p><br>
+        <img src="img/Iaves/amenazas.png"><span>Amenazas</span>
+         <p class="descripcion">Tráfico ilegal.<p><br>
+         </p>     
+</div>
+
+
+<div data-role="collapsible" data-theme="c" data-content-theme="a" data-expanded-icon="carat-u" data-collapsed-icon="carat-d" data-iconpos="right">
+    	<h4><img src="img/Aves/img_28.png" align="absmiddle"> Lora ojo de plata</h4>
+        <p>
+         <img class="imgAve" src="img/Aves/img_27.jpg"><br> 
+         
+         <img src="img/Iaves/nombre.png"><span>Nombre común</span><br>
+        <p class="descripcion">Lora ojo de plata (Esp) - Mealy Amazon, Mealy Parrot (Eng)<p><br>
+        <img src="img/Iaves/clasificacion.png"><span>Clasificación</span><br>
+        <p class="descripcion"><b>Reino:</b> Animalia<br>
+		<b>Phylum:</b> Chordata<br>
+		<b>Clase:</b> Aves<br>
+		<b>Orden:</b> Psittaciformes<br>
+		<b>Familia:</b> Psittacidae<br>
+		<b>Género:</b> Amazona<br>
+		<b>Especie:</b> Amazona farinosa<p><br>
+        <img src="img/Iaves/distribucion.png"><span>Distribución geográfica</span><br>
+        <p class="descripcion">Ampliamente distribuida desde el sur oriente de México, pasando por América Central y el centro y norte de Sur América.<p><br>
+        <img src="img/Iaves/habitat.png"><span>Habitat</span><br>
+        <p class="descripcion">Bosques húmedos tropicales, manglares y sitios con árboles esparcidos.<p><br>
+        <img src="img/Iaves/alimentacion.png"><span>Alimentación</span><br>
+         <p class="descripcion">Se alimentan principalmente de frutos, semillas, nueces y brotes de algunas hojas.<p><br>
+        <img src="img/Iaves/reproduccion.png"><span>Reproducción</span><br>
+         <p class="descripcion">Las hembras ponen de tres a cuatro huevos en nidos hechos en cavidades o grietas en árboles. La incubación dura aproximadamente 26 días y los polluelos abandonan el nido aproximadamente dos meses después de salir del huevo.<p><br>
+        <img src="img/Iaves/comportamiento.png"><span>Comportamiento</span><br>
+         <p class="descripcion">Son aves sociales, pueden encontrarse desde parejas hasta grupos grandes. Usualmente hacen vocalizaciones ruidosas solo al amanecer y al atardecer. Por lo general tienen la misma pareja toda su vida.<p><br>
+        <img src="img/Iaves/conservacion.png"><span>Estado de conservación</span><br>
+         <p class="descripcion">Preocupación menor (Least concern –IUCN).<p><br>
+        <img src="img/Iaves/amenazas.png"><span>Amenazas</span>
+         <p class="descripcion">Tráfico ilegal.<p><br>
+         </p> 
+</div>
+
+
+<div data-role="collapsible" data-theme="c" data-content-theme="a" data-expanded-icon="carat-u" data-collapsed-icon="carat-d" data-iconpos="right">
+    	<h4><img src="img/Aves/img_29.png" align="absmiddle"> Loro real amazónico</h4>
+        <p>
+         <img class="imgAve" src="img/Aves/img_28.jpg"><br>
+         
+                  <img src="img/Iaves/nombre.png"><span>Nombre común</span><br>
+        <p class="descripcion">Loro real amazónico (Esp) - Yellow-crowned Amazon, Yellow-crowned Parrot (Eng)<p><br>
+        <img src="img/Iaves/clasificacion.png"><span>Clasificación</span><br>
+        <p class="descripcion"><b>Reino:</b> Animalia<br>
+		<b>Phylum:</b> Chordata<br>
+		<b>Clase:</b> Aves<br>
+		<b>Orden:</b> Psittaciformes<br>
+		<b>Familia:</b> Psittacidae<br>
+		<b>Género:</b> Amazona<br>
+		<b>Especie:</b> Amazona ochrocephala<p><br>
+        <img src="img/Iaves/distribucion.png"><span>Distribución geográfica</span><br>
+        <p class="descripcion">Esta especie presenta una distribución bastante amplia, desde el sur de México hasta Brasil y el norte de Bolivia.<p><br>
+        <img src="img/Iaves/habitat.png"><span>Habitat</span><br>
+        <p class="descripcion">Bosques secos abiertos, bordes de selvas húmedas al norte de su distribución, bosques de galería y sabanas con árboles dispersos en los llanos, áreas pantanosas o más bien abiertas en la Amazonía. Siempre en tierras bajas. Su distribución no supera los 500 msnm.<p><br>
+        <img src="img/Iaves/alimentacion.png"><span>Alimentación</span><br>
+         <p class="descripcion">Se alimentan principalmente de frutos, semillas y nueces.<p><br>
+        <img src="img/Iaves/reproduccion.png"><span>Reproducción</span><br>
+         <p class="descripcion">Anidan en troncos huecos o grietas en los mismos, ponen entre tres y cuatro huevos que eclosionan después de 25 o 26 días de incubación. Los pichones abandonan el nido después de 70 días aproximadamente.<p><br>
+        <img src="img/Iaves/comportamiento.png"><span>Comportamiento</span><br>
+         <p class="descripcion">Por lo general se encuentran en parejas, en lugar de bandadas.<p><br>
+        <img src="img/Iaves/conservacion.png"><span>Estado de conservación</span><br>
+         <p class="descripcion">Preocupación menor (Least concern –IUCN).<p><br>
+        <img src="img/Iaves/amenazas.png"><span>Amenazas</span>
+         <p class="descripcion">Tráfico ilegal.<p><br>
+         </p>     
+</div>
+
+
+<div data-role="collapsible" data-theme="c" data-content-theme="a" data-expanded-icon="carat-u" data-collapsed-icon="carat-d" data-iconpos="right">
+    	<h4><img src="img/Aves/img_30.png" align="absmiddle"> Pato psingo</h4>
+        <p>
+         <img class="imgAve" src="img/Aves/img_29.jpg"><br> 
+         
+                  <img src="img/Iaves/nombre.png"><span>Nombre común</span><br>
+        <p class="descripcion">Pato pisingo, iguasa común (Esp) – Black-bellied Whistling-duck (Eng)<p><br>
+        <img src="img/Iaves/clasificacion.png"><span>Clasificación</span><br>
+        <p class="descripcion"><b>Reino:</b> Animalia<br>
+		<b>Phylum:</b> Chordata<br>
+		<b>Clase:</b> Aves<br>
+		<b>Orden:</b> Anseriformes<br>
+		<b>Familia:</b> Anatidae<br>
+		<b>Género:</b> Dendrocygna<br>
+		<b>Especie:</b> Dendrocygna autumnalis<p><br>
+        <img src="img/Iaves/distribucion.png"><span>Distribución geográfica</span><br>
+        <p class="descripcion">Ampliamente distribuida, desde el sur de Estados Unidos hasta el centro de Sur América.<p><br>
+        <img src="img/Iaves/habitat.png"><span>Habitat</span><br>
+        <p class="descripcion">Habitan en estanques de agua dulce, calmada y poco profunda, lagos y pantanos, tierras de cultivo o embalses con abundante vegetación, especialmente aquellos que presenten árboles en sus orillas.<p><br>
+        <img src="img/Iaves/alimentacion.png"><span>Alimentación</span><br>
+         <p class="descripcion">Consumen una amplia variedad de material vegetal, también consumen artrópodos e invertebrados acuáticos cuando están disponibles. A menudo se alimentan de la vegetación sumergida.<p><br>
+        <img src="img/Iaves/reproduccion.png"><span>Reproducción</span><br>
+         <p class="descripcion">Animales fuertemente monógamos, un rasgo más a menudo asociado con los gansos y cisnes. Ambos padres comparten las tareas asociadas con la crianza de la camada, desde la incubación hasta la cría de los recién nacidos. Principalmente anidan en cavidades, prefieren árboles huecos, pero anidan en el suelo cuando es necesario.<p><br>
+        <img src="img/Iaves/comportamiento.png"><span>Comportamiento</span><br>
+         <p class="descripcion">Animales altamente gregarios, que forman grandes bandadas cuando no están en temporada de reproducción. Anidan en árboles huecos.<p><br>
+        <img src="img/Iaves/conservacion.png"><span>Estado de conservación</span><br>
+         <p class="descripcion">Preocupación menor (Least concern –IUCN).<p><br>
+        <img src="img/Iaves/amenazas.png"><span>Amenazas</span>
+         <p class="descripcion">Destrucción de hábitat y cacería.<p><br>
+         </p>    
+</div>
+
+
+<div data-role="collapsible" data-theme="c" data-content-theme="a" data-expanded-icon="carat-u" data-collapsed-icon="carat-d" data-iconpos="right">
+    	<h4><img src="img/Aves/img_31.png" align="absmiddle"> Pato viudita</h4>
+        <p>
+         <img class="imgAve" src="img/Aves/img_30.jpg"><br> 
+         
+                  <img src="img/Iaves/nombre.png"><span>Nombre común</span><br>
+        <p class="descripcion">Pato viudita, sirirí (Esp) – White-faced Whistling-duck (Eng)<p><br>
+        <img src="img/Iaves/clasificacion.png"><span>Clasificación</span><br>
+        <p class="descripcion"><b>Reino:</b> Animalia<br>
+		<b>Phylum:</b> Chordata<br>
+		<b>Clase:</b> Aves<br>
+		<b>Orden:</b> Anseriformes<br>
+		<b>Familia:</b> Anatidae<br>
+		<b>Género:</b> Dendrocygna<br>
+		<b>Especie:</b> Dendrocygna viduata<p><br>
+        <img src="img/Iaves/distribucion.png"><span>Distribución geográfica</span><br>
+        <p class="descripcion">Ampliamente distribuida en Sur América y África<p><br>
+        <img src="img/Iaves/habitat.png"><span>Habitat</span><br>
+        <p class="descripcion">Lagos de aguas dulces tranquilas o reservorios con abundante vegetación, donde está su mayor fuente de alimentación.<p><br>
+        <img src="img/Iaves/alimentacion.png"><span>Alimentación</span><br>
+         <p class="descripcion">Prefiere alimentarse de plantas, semillas, pequeños invertebrados, moluscos, insectos y crustáceos. Come filtrando su alimento del agua con pocos centímetros de profundidad.<p><br>
+        <img src="img/Iaves/reproduccion.png"><span>Reproducción</span><br>
+         <p class="descripcion">Anida en plataformas de varas cerca del suelo, donde ponen de 8 a 12 huevos. Utilizan ocasionalmente árboles para anidar.<p><br>
+        <img src="img/Iaves/comportamiento.png"><span>Comportamiento</span><br>
+         <p class="descripcion">Animales gregarios, con hábitos crepusculares<p><br>
+        <img src="img/Iaves/conservacion.png"><span>Estado de conservación</span><br>
+         <p class="descripcion">Preocupación menor (Least concern –IUCN).<p><br>
+        <img src="img/Iaves/amenazas.png"><span>Amenazas</span>
+         <p class="descripcion">Cacería, botulismo aviar e influenza aviar.<p><br>
+         </p>       
+</div>
+
+
+<div data-role="collapsible" data-theme="c" data-content-theme="a" data-expanded-icon="carat-u" data-collapsed-icon="carat-d" data-iconpos="right">
+    	<h4><img src="img/Aves/img_32.png" align="absmiddle"> Paujil de pico amarillo</h4>
+        <p>
+         <img class="imgAve" src="img/Aves/img_31.jpg"><br> 
+         
+                  <img src="img/Iaves/nombre.png"><span>Nombre común</span><br>
+        <p class="descripcion">Paujil de pico amarillo (Esp) – Great Curassow (Eng)<p><br>
+        <img src="img/Iaves/clasificacion.png"><span>Clasificación</span><br>
+        <p class="descripcion"><b>Reino:</b> Animalia<br>
+		<b>Phylum:</b> Chordata<br>
+		<b>Clase:</b> Aves<br>
+		<b>Orden:</b> Galliformes<br>
+		<b>Familia:</b> Cracidae<br>
+		<b>Género:</b> Crax<br>
+		<b>Especie:</b> Crax rubra<p><br>
+        <img src="img/Iaves/distribucion.png"><span>Distribución geográfica</span><br>
+        <p class="descripcion">A pesar de presentar una amplia distribución, su distribución es muy fragmentada, va desde del sur de México, Centroamérica a través de Belice, Guatemala, El Salvador, Honduras, Nicaragua, Costa Rica y Panamá, al oeste Colombia (tierras bajas del Pacífico al este con el Golfo de Urabá y el Valle del Alto Sinú) y muy rara vez, al oeste del Ecuador.<p><br>
+        <img src="img/Iaves/habitat.png"><span>Habitat</span><br>
+        <p class="descripcion">Su hábitat se restringe a bosques húmedos de hoja perenne no intervenidos (también bosques estacionalmente secos en algunas áreas) y manglares. Es sobre todo una especie de tierras bajas, pero se ha registrado en altitudes de hasta 1.900 msnm en Panamá y Guatemala.<p><br>
+        <img src="img/Iaves/alimentacion.png"><span>Alimentación</span><br>
+         <p class="descripcion">Se alimentan principalmente de frutas, semillas y artrópodos.<p><br>
+        <img src="img/Iaves/reproduccion.png"><span>Reproducción</span><br>
+         <p class="descripcion">Es una especie monógama. Se reproduce entre febrero y junio. La hembra pone dos huevos que incuba durante 32 días aproximadamente.<p><br>
+        <img src="img/Iaves/comportamiento.png"><span>Comportamiento</span><br>
+         <p class="descripcion">Generalmente se encuentran solos o en parejas y ocasionalmente en grupos familiares. Como otras especies del género Crax. Son principalmente terrestres.<p><br>
+        <img src="img/Iaves/conservacion.png"><span>Estado de conservación</span><br>
+         <p class="descripcion">Vulnerable (Vulnerable–IUCN).<p><br>
+        <img src="img/Iaves/amenazas.png"><span>Amenazas</span>
+         <p class="descripcion">Es ampliamente cazada como alimento. La mayor amenaza que enfrentan es la pérdida de hábitat y la fragmentación severa, por ejemplo, en Ecuador, Honduras, El Salvador, Colombia (un ritmo sin precedentes de deforestación en el Chocó colombiano), Guatemala y Nicaragua. Rápidamente desaparece cuando se cortan árboles en los bosques que antes eran inaccesibles. Algunas veces son capturadas como mascotas.<p><br>
+         </p>       
+</div>
+
+
+<div data-role="collapsible" data-theme="c" data-content-theme="a" data-expanded-icon="carat-u" data-collapsed-icon="carat-d" data-iconpos="right">
+    	<h4><img src="img/Aves/img_33.png" align="absmiddle"> Paujil de pico azul</h4>
+          <p>
+         <img class="imgAve" src="img/Aves/img_32.jpg"><br>
+         
+                  <img src="img/Iaves/nombre.png"><span>Nombre común</span><br>
+        <p class="descripcion">Paujil de pico azul, pavón colombiano (Esp) – Blue-billed Curassow, Blue-knobbed Curassow (Eng)<p><br>
+        <img src="img/Iaves/clasificacion.png"><span>Clasificación</span><br>
+        <p class="descripcion"><b>Reino:</b> Animalia<br>
+		<b>Phylum:</b> Chordata<br>
+		<b>Clase:</b> Aves<br>
+		<b>Orden:</b> Galliformes<br>
+		<b>Familia:</b> Cracidae<br>
+		<b>Género:</b> Crax<br>
+		<b>Especie:</b> Crax alberti<p><br>
+        <img src="img/Iaves/distribucion.png"><span>Distribución geográfica</span><br>
+        <p class="descripcion">Es una especie endémica de Colombia. Llega hasta 1200 msnm en las vertientes norte, oriental y occidental de la sierra Nevada de Santa Marta. También se conoce de localidades de tierras bajas y el piedemonte del valle medio del río Magdalena desde Honda hasta la serranía de San Lucas, bajo Cauca y parte alta de los ríos San Jorge y Sinú y serranía de San Jacinto. (Arango. C. A. 2012. Pavón Colombianao (Crax alberti). Wiki Aves Colombia. (R. Johnston, Editor). Universidad ICESI. Cali. Colombia.<p><br>
+        <img src="img/Iaves/habitat.png"><span>Habitat</span><br>
+        <p class="descripcion">Se encuentran en bosques húmedos de tierras bajas, piedemontes y colinas bajas. Usa el interior de bosques maduros poco intervenidos y ocasionalmente bordes de bosque y vegetación en bosques secundarios. (Arango. C. A. 2012. Pavón Colombianao (Crax alberti). Wiki Aves Colombia. (R. Johnston, Editor). Universidad ICESI. Cali. Colombia.<p><br>
+        <img src="img/Iaves/alimentacion.png"><span>Alimentación</span><br>
+         <p class="descripcion">Se alimentan de frutas, brotes, invertebrados, y posiblemente carroña. Forrajean directamente sobre el suelo del bosque y nunca han sido observados alimentándose en árboles.<p><br>
+        <img src="img/Iaves/reproduccion.png"><span>Reproducción</span><br>
+         <p class="descripcion">Se reproducen en la estación seca, anidando en diciembre y marzo, se han observado grupos de polluelos y adultos en marzo y agosto. Ponen dos huevos grandes de color blanco de cascara gruesa y con superficie rugosa.<p><br>
+        <img src="img/Iaves/comportamiento.png"><span>Comportamiento</span><br>
+         <p class="descripcion">Generalmente se encuentran solos o en parejas y ocasionalmente en grupos familiares. Son principalmente terrestres y al parecer forman parejas monógamas. (Arango. C. A. 2012. Pavón Colombianao (Crax alberti). Wiki Aves Colombia. (R. Johnston, Editor). Universidad ICESI. Cali. Colombia.<p><br>
+        <img src="img/Iaves/conservacion.png"><span>Estado de conservación</span><br>
+         <p class="descripcion">En peligro crítico (Critically endangered–IUCN).<p><br>
+        <img src="img/Iaves/amenazas.png"><span>Amenazas</span>
+         <p class="descripcion">La tasa de deforestación en la zona de distribución de esta especie ha sido muy rápida en la última década, de tal manera que poco queda de su hábitat. Se prevé que podría someterse a una reducción de la población extremadamente rápida dado el aumento del acceso a los hábitats y la caza. También se suma la pérdida de hábitat para realizar cultivos ilícitos.<p><br> 
+         </p>     
+</div>
+
+
+<div data-role="collapsible" data-theme="c" data-content-theme="a" data-expanded-icon="carat-u" data-collapsed-icon="carat-d" data-iconpos="right">
+    	<h4><img src="img/Aves/img_34.png" align="absmiddle"> Pava cara azul</h4>
+        <p>
+         <img class="imgAve" src="img/Aves/img_33.jpg"><br> 
+         
+                  <img src="img/Iaves/nombre.png"><span>Nombre común</span><br>
+        <p class="descripcion">Pava cara azul (Esp) – Sickle-winged Guan (Eng)<p><br>
+        <img src="img/Iaves/clasificacion.png"><span>Clasificación</span><br>
+        <p class="descripcion"><b>Reino:</b> Animalia<br>
+		<b>Phylum:</b> Chordata<br>
+		<b>Clase:</b> Aves<br>
+		<b>Orden:</b> Galliformes<br>
+		<b>Familia:</b> Cracidae<br>
+		<b>Género:</b> Chamaepetes<br>
+		<b>Especie:</b> Chamaepetes goudotii<p><br>
+        <img src="img/Iaves/distribucion.png"><span>Distribución geográfica</span><br>
+        <p class="descripcion">Colombia, Ecuador y Perú.<p><br>
+        <img src="img/Iaves/habitat.png"><span>Habitat</span><br>
+        <p class="descripcion">Es posible encontrar esta pava de tierras frías en bosques húmedos y bordes de los bosques en las laderas de los Andes. Principalmente habitan altitudes entre los 1500 y los 3000 msnm y en la vertiente del Pacífico desde los 500 msnm.<p><br>
+        <img src="img/Iaves/alimentacion.png"><span>Alimentación</span><br>
+         <p class="descripcion">Visitan árboles con frutos principalmente al amanecer o al anochecer.<p><br>
+        <img src="img/Iaves/reproduccion.png"><span>Reproducción</span><br>
+         <p class="descripcion">La hembra pone dos huevos color blanco y se encarga de su incubación sin ayuda del macho. En Colombia se registra actividad reproductiva de enero a junio.<p><br>
+        <img src="img/Iaves/comportamiento.png"><span>Comportamiento</span><br>
+         <p class="descripcion">Se encuentran usualmente en parejas o grupos de entre 3 y 5 individuos. Son principalmente arborícolas y ocupan el estrato medio y el alto de los bosques, no obstante es poco frecuente hallarlas en el suelo.<p><br>
+        <img src="img/Iaves/conservacion.png"><span>Estado de conservación</span><br>
+         <p class="descripcion">Preocupación menor (Least concern –IUCN).<p><br>
+        <img src="img/Iaves/amenazas.png"><span>Amenazas</span>
+         <p class="descripcion">La caza por su carne, la destrucción de los bosques andinos y subandinos.<p><br>
+         </p>     
+</div>
+
+
+<div data-role="collapsible" data-theme="c" data-content-theme="a" data-expanded-icon="carat-u" data-collapsed-icon="carat-d" data-iconpos="right">
+    	<h4><img src="img/Aves/img_36.png" align="absmiddle"> Pechiblanco</h4>
+         <p>
+         <img class="imgAve" src="img/Aves/img_35.jpg"><br> 
+         
+                  <img src="img/Iaves/nombre.png"><span>Nombre común</span><br>
+        <p class="descripcion">Pechiblanco (Esp) – Black-chested Jay (Eng)<p><br>
+        <img src="img/Iaves/clasificacion.png"><span>Clasificación</span><br>
+        <p class="descripcion"><b>Reino:</b> Animalia<br>
+		<b>Phylum:</b> Chordata<br>
+		<b>Clase:</b> Aves<br>
+		<b>Orden:</b> Passeriformes<br>
+		<b>Familia:</b> Corvidae<br>
+		<b>Género:</b> Cyanocorax<br>
+		<b>Especie:</b> Cyanocorax affinis<p><br>
+        <img src="img/Iaves/distribucion.png"><span>Distribución geográfica</span><br>
+        <p class="descripcion">Su rango de distribución comprende Colombia, Costa Rica, Panamá y Venezuela.<p><br>
+        <img src="img/Iaves/habitat.png"><span>Habitat</span><br>
+        <p class="descripcion">Es común en bosques secos a húmedos en el norte de Colombia, bordes de bosques y bosques secundarios<p><br>
+        <img src="img/Iaves/alimentacion.png"><span>Alimentación</span><br>
+         <p class="descripcion">Se alimentan principalmente de insectos, lagartijas, ranas pequeñas y diferentes tipos de frutos.<p><br>
+        <img src="img/Iaves/reproduccion.png"><span>Reproducción</span><br>
+         <p class="descripcion">Son animales monógamos, sus posturas constan de cuatro huevos los cuales son incubados por la hembra y eclosionan a los 17 días.<p><br>
+        <img src="img/Iaves/comportamiento.png"><span>Comportamiento</span><br>
+         <p class="descripcion">Es un ave tímida y discreta que generalmente se mantiene entre la vegetación densa.<p><br>
+        <img src="img/Iaves/conservacion.png"><span>Estado de conservación</span><br>
+         <p class="descripcion">Preocupación menor (Least concern –IUCN).<p><br>
+        <img src="img/Iaves/amenazas.png"><span>Amenazas</span>
+         <p class="descripcion">Destrucción de hábitat y tráfico ilegal.<p><br>
+         </p>      
+</div>
+
+
+<div data-role="collapsible" data-theme="c" data-content-theme="a" data-expanded-icon="carat-u" data-collapsed-icon="carat-d" data-iconpos="right">
+    	<h4><img src="img/Aves/img_37.png" align="absmiddle"> Periquito azul</h4>
+        <p>
+         <img class="imgAve" src="img/Aves/img_36.jpg"><br>
+         
+                  <img src="img/Iaves/nombre.png"><span>Nombre común</span><br>
+        <p class="descripcion">Periquito azul amazónico (Esp) – Cobalt-winged Parakeet (Eng)<p><br>
+        <img src="img/Iaves/clasificacion.png"><span>Clasificación</span><br>
+        <p class="descripcion"><b>Reino:</b> Animalia<br>
+		<b>Phylum:</b> Chordata<br>
+		<b>Clase:</b> Aves<br>
+		<b>Orden:</b> Psittaciformes<br>
+		<b>Familia:</b> Psittacidae<br>
+		<b>Género:</b> Brotogeris<br>
+		<b>Especie:</b> Brotogeris cyanoptera<p><br>
+        <img src="img/Iaves/distribucion.png"><span>Distribución geográfica</span><br>
+        <p class="descripcion">Ampliamente distribuida por la cuenca amazónica, Colombia, Ecuador, Perú, Brasil, Bolivia y Venezuela.<p><br>
+        <img src="img/Iaves/habitat.png"><span>Habitat</span><br>
+        <p class="descripcion">Bosques húmedos tropicales de tierras bajas y zonas degradadas antes boscosas.<p><br>
+        <img src="img/Iaves/alimentacion.png"><span>Alimentación</span><br>
+         <p class="descripcion">Se alimentan principalmente de frutas, semillas, flores y néctar.<p><br>
+        <img src="img/Iaves/reproduccion.png"><span>Reproducción</span><br>
+         <p class="descripcion">Ponen entre 3 y 6 huevos en nidos que construyen en cavidades en los troncos de árboles.<p><br>
+        <img src="img/Iaves/comportamiento.png"><span>Comportamiento</span><br>
+         <p class="descripcion">Son animales gregarios (grupos entre 4 y 30 individuos) mientras no estén en época reproductiva.<p><br>
+        <img src="img/Iaves/conservacion.png"><span>Estado de conservación</span><br>
+         <p class="descripcion">Preocupación menor (Least concern –IUCN).<p><br>
+        <img src="img/Iaves/amenazas.png"><span>Amenazas</span>
+         <p class="descripcion">Tráfico ilegal, destrucción de hábitat.<p><br> 
+         </p>       
+</div>
+
+
+<div data-role="collapsible" data-theme="c" data-content-theme="a" data-expanded-icon="carat-u" data-collapsed-icon="carat-d" data-iconpos="right">
+    	<h4><img src="img/Aves/img_38.png" align="absmiddle"> Sinsonte</h4>
+        <p>
+         <img class="imgAve" src="img/Aves/img_38.jpg"><br> 
+         
+                  <img src="img/Iaves/nombre.png"><span>Nombre común</span><br>
+        <p class="descripcion">Sinsonte (Esp) – Tropical Mockingbird (Eng)<p><br>
+        <img src="img/Iaves/clasificacion.png"><span>Clasificación</span><br>
+        <p class="descripcion"><b>Reino:</b> Animalia<br>
+		<b>Phylum:</b> Chordata<br>
+		<b>Clase:</b> Aves<br>
+		<b>Orden:</b> Psittaciformes<br>
+		<b>Familia:</b> Mimidae<br>
+		<b>Género:</b> Mimus<br>
+		<b>Especie:</b> Mimus gilvus<p><br>
+        <img src="img/Iaves/distribucion.png"><span>Distribución geográfica</span><br>
+        <p class="descripcion">Su distribución comprende parte de Centroamérica, los países del norte de Suramérica y Las Antillas. Antigua y Barbuda, Aruba, Barbados, Belice, Brasil, Colombia, Dominica, El Salvador, Guayana Francesa, Granada, Guadalupe, Guatemala, Guyana, Honduras, Martinica, México, Montserrat, Nicaragua, Panamá, Saint Kitts y Nevis, Santa Lucía; San Vicente y las Granadinas, Surinam, Trinidad y Tobago, Venezuela.<p><br>
+        <img src="img/Iaves/habitat.png"><span>Habitat</span><br>
+        <p class="descripcion">Es común en la mayoría de hábitats abiertos, incluyendo zonas habitadas por humanos.<p><br>
+        <img src="img/Iaves/alimentacion.png"><span>Alimentación</span><br>
+         <p class="descripcion">Forrajean en el suelo o entre la vegetación, o vuelan desde una percha para capturar invertebrados. Comen principalmente insectos y algunas bayas. También se atreven a agarrar la comida de platos o mesas desatendidas por humanos.<p><br>
+        <img src="img/Iaves/reproduccion.png"><span>Reproducción</span><br>
+         <p class="descripcion">Construyen sus nidos con ramas, el tamaño normal de la nidada es de tres huevos de coloración verde grisáceo. Solamente las hembras se encargan de la incubación, la cual tarda de 13 a 15 días.<p><br>
+        <img src="img/Iaves/comportamiento.png"><span>Comportamiento</span><br>
+         <p class="descripcion">Animales muy territoriales, defienden agresivamente su nido contra otras aves y animales, incluyendo grandes iguanas, perros y humanos.<p><br>
+        <img src="img/Iaves/conservacion.png"><span>Estado de conservación</span><br>
+         <p class="descripcion">Preocupación menor (Least concern –IUCN).<p><br>
+        <img src="img/Iaves/amenazas.png"><span>Amenazas</span>
+         <p class="descripcion">En Colombia esta especie se encuentra en peligro debido a la destrucción de hábitat y a que frecuentemente es capturada para tenencia como mascota.<p><br>
+         </p>       
+</div>
+
+</div>
+<!--Termina Colapsables-->
+  </div>
+<!--Termina Contenido-->
+
+<!--Footer-->
+<div id="Footer" data-role="footer" data-position="fixed">
+    <div id="LogoP"><img src="img/Iconos/LogoP.png"></div>
+</div>
+</div>
+<!--Termina Footer-->
+<!--Termina Aves-->
+
+
+
+
+<!--Galería-->
+<div data-role="page" id="Galeria">
+<!--Menu Barra-->
+  <div id="Encabezado" data-position="fixed">
+		<div id="Iconos">
+        <div id="IconoChat"><a href="../../index.html#Chat" rel="external" data-ajax="false"><img src="img/Iconos/Chat.png"></a></div>
+        <div id="IconoMapa"><a href="../../index.html#Mapa" rel="external" data-ajax="false"><img src="img/Iconos/Mapa.png"></a></div>
+		<div id="IconoMenu"><a href="#PanelMenu" data-rel="panel"><img src="img/Iconos/Menu.png"></a></div>
+        </div>
+        <div id="Logo"><a href="#Bienvenida" data-transition="slide"><img src="img/Iconos/Logo.png"></a></div>
+  </div>
+<!--Panel Menu-->
+    <div data-role="panel" id="PanelMenu" data-display="overlay" data-position="right">  
+    	<div id="ListaMenu" data-role="controlgroup" data-theme="b">
+        	<a href="#" data-rel="close"><div id="CerrarMenu"><img src="img/Iconos/FlechaS.png"></div></a>
+    		<a href="#Inicio" data-role="button" data-iconpos="left" id="bI" data-transition="slide">Inicio</a>
+   			<a id="bA" href="#Aves" data-role="button" data-iconpos="left" data-transition="slide">Aves</a>
+    		<a id="Presionado" href="#Galeria" data-role="button" data-iconpos="left" data-transition="slide">Galería</a>
+    		<a id="bV" href="#Videos" data-role="button" data-iconpos="left" data-transition="slide">Videos</a>
+    		<a id="bC" href="#Contacto" data-role="button" data-iconpos="left" data-transition="slide">Contacto</a>
+    	</div>
+  	</div>
+<!--Termina Panel Menu-->
+
+<!--Contenido-->
+<div id="ContenedorG" data-role="content">
+	<div id="imagenes">
+  		<a id="Imagen1" href="#img1" data-role="button" data-rel="popup" data-transition="pop">
+  	
+  		</a>
+  		<div data-role="popup" id="img1" data-position-to="window">
+        	<a href="#" data-role="button" data-icon="delete" data-rel="back" data-iconpos="notext" id="CerrarImg"></a>
+            <img src="img/Galeria/img_01.jpg">
+        </div>
+		
+        
+        <a id="Imagen2" href="#img2" data-role="button" data-rel="popup" data-transition="pop">
+  	
+  		</a>
+  		<div data-role="popup" id="img2" data-position-to="window">
+        	<a href="#" data-role="button" data-icon="delete" data-rel="back" data-iconpos="notext" id="CerrarImg"></a>
+            <img src="img/Galeria/img_08.jpg">
+        </div>
+        <a id="Imagen3" href="#img3" data-role="button" data-rel="popup" data-transition="pop">
+  	
+  		</a>
+  		<div data-role="popup" id="img3" data-position-to="window">
+        	<a href="#" data-role="button" data-icon="delete" data-rel="back" data-iconpos="notext" id="CerrarImg"></a>
+            <img src="img/Galeria/img_03.jpg">
+        </div>
+		
+        
+        <a id="Imagen4" href="#img4" data-role="button" data-rel="popup" data-transition="pop">
+  	
+  		</a>
+  		<div data-role="popup" id="img4" data-position-to="window">
+        	<a href="#" data-role="button" data-icon="delete" data-rel="back" data-iconpos="notext" id="CerrarImg"></a>
+            <img src="img/Galeria/img_02.jpg">
+        </div>
+        <a id="Imagen5" href="#img5" data-role="button" data-rel="popup" data-transition="pop">
+  	
+  		</a>
+  		<div data-role="popup" id="img5" data-position-to="window">
+        	<a href="#" data-role="button" data-icon="delete" data-rel="back" data-iconpos="notext" id="CerrarImg"></a>
+            <img src="img/Galeria/img_04.jpg">
+        </div>
+		
+        <a id="Imagen6" href="#img6" data-role="button" data-rel="popup" data-transition="pop">
+  	
+  		</a>
+  		<div data-role="popup" id="img6" data-position-to="window">
+        	<a href="#" data-role="button" data-icon="delete" data-rel="back" data-iconpos="notext" id="CerrarImg"></a>
+            <img src="img/Galeria/img_07.jpg">
+        </div>
+        
+        
+        <a id="Imagen7" href="#img7" data-role="button" data-rel="popup" data-transition="pop">
+  	
+  		</a>
+  		<div data-role="popup" id="img7" data-position-to="window">
+        	<a href="#" data-role="button" data-icon="delete" data-rel="back" data-iconpos="notext" id="CerrarImg"></a>
+            <img src="img/Galeria/img_05.jpg">
+        </div>
+	
+        
+          <a id="Imagen9" href="#img9" data-role="button" data-rel="popup" data-transition="pop">
+  	
+  		</a>
+  		<div data-role="popup" id="img9" data-position-to="window">
+        	<a href="#" data-role="button" data-icon="delete" data-rel="back" data-iconpos="notext" id="CerrarImg"></a>
+            <img src="img/Galeria/img_09.jpg">
+        </div>
+        
+        <a id="Imagen10" href="#img10" data-role="button" data-rel="popup" data-transition="pop">
+  	
+  		</a>
+  		<div data-role="popup" id="img10" data-position-to="window">
+        	<a href="#" data-role="button" data-icon="delete" data-rel="back" data-iconpos="notext" id="CerrarImg"></a>
+            <img src="img/Galeria/img_10.jpg">
+        </div>
+	
+        
+          <a id="Imagen11" href="#img11" data-role="button" data-rel="popup" data-transition="pop">
+  	
+  		</a>
+  		<div data-role="popup" id="img11" data-position-to="window">
+        	<a href="#" data-role="button" data-icon="delete" data-rel="back" data-iconpos="notext" id="CerrarImg"></a>
+            <img src="img/Galeria/img_11.jpg">
+        </div>
+        
+        
+        <a id="Imagen12" href="#img12" data-role="button" data-rel="popup" data-transition="pop">
+  	
+  		</a>
+  		<div data-role="popup" id="img12" data-position-to="window">
+        	<a href="#" data-role="button" data-icon="delete" data-rel="back" data-iconpos="notext" id="CerrarImg"></a>
+            <img src="img/Galeria/img_12.jpg">
+        </div>
+        
+        </div>
+</div>
+<!--Termina Contenido-->
+
+<!--Footer-->
+<div id="FooterG" data-role="footer" data-position="fixed">
+    <div id="LogoP"><img src="img/Iconos/LogoP.png"></div>
+</div>
+</div>
+<!--Termina Footer-->
+<!--Termina Galería-->
+
+
+
+<!--Videos-->
+<div data-role="page" id="Videos">
+<!--Menu Barra-->
+  <div id="Encabezado" data-position="fixed">
+		<div id="Iconos">
+        <div id="IconoChat"><a href="../../index.html#Chat" rel="external" data-ajax="false"><img src="img/Iconos/Chat.png"></a></div>
+        <div id="IconoMapa"><a href="../../index.html#Mapa" rel="external" data-ajax="false"><img src="img/Iconos/Mapa.png"></a></div>
+		<div id="IconoMenu"><a href="#PanelMenu" data-rel="panel"><img src="img/Iconos/Menu.png"></a></div>
+        </div>
+        <div id="Logo"><a href="#Bienvenida" data-transition="slide"><img src="img/Iconos/Logo.png"></a></div>
+  </div>
+<!--Panel Menu-->
+    <div data-role="panel" id="PanelMenu" data-display="overlay" data-position="right">  
+    	<div id="ListaMenu" data-role="controlgroup" data-theme="b">
+        	<a href="#" data-rel="close"><div id="CerrarMenu"><img src="img/Iconos/FlechaS.png"></div></a>
+    		<a href="#Inicio" data-role="button" data-iconpos="left" id="bI" data-transition="slide">Inicio</a>
+   			<a id="bA" href="#Aves" data-role="button" data-iconpos="left" data-transition="slide">Aves</a>
+    		<a id="bG" href="#Galeria" data-role="button" data-iconpos="left" data-transition="slide">Galería</a>
+    		<a id="Presionado" href="#Videos" data-role="button" data-iconpos="left" data-transition="slide">Videos</a>
+    		<a id="bC" href="#Contacto" data-role="button" data-iconpos="left" data-transition="slide">Contacto</a>
+    	</div>
+  	</div>
+<!--Termina Panel Menu-->
+
+<!--Contenido-->
+<div id="Contenedor" data-role="content">
+	<div id="ContVideos">
+		<iframe class="Cvideo" src="https://www.youtube.com/embed/R6XD2pa5JW4" frameborder="0" allowfullscreen></iframe>
+		<iframe class="Cvideo" src="https://www.youtube.com/embed/IrVH0ljLkTk" frameborder="0" allowfullscreen></iframe>
+		<iframe class="Cvideo" src="https://www.youtube.com/embed/IIXYkljtlXI" frameborder="0" allowfullscreen></iframe>
+        <iframe class="Cvideo" src="https://www.youtube.com/embed/6j7ie1XcR_g" frameborder="0" allowfullscreen></iframe>
+        <iframe class="Cvideo" src="https://www.youtube.com/embed/BuAlqiAYfqM" frameborder="0" allowfullscreen></iframe>
+        <iframe class="Cvideo" src="https://www.youtube.com/embed/MSIlUrUPME4" frameborder="0" allowfullscreen></iframe>
+	</div>
+</div>
+<!--Termina Contenido-->
+
+<!--Footer-->
+<div id="Footer" data-role="footer" data-position="fixed">
+    <div id="LogoP"><img src="img/Iconos/LogoP.png"></div>
+</div>
+</div>
+<!--Termina Footer-->
+<!--Termina Videos-->
+
+
+
+
+<!--Contacto-->
+<div data-role="page" id="Contacto">
+<!--Menu Barra-->
+  <div id="Encabezado" data-position="fixed">
+		<div id="Iconos">
+        <div id="IconoChat"><a href="../../index.html#Chat" rel="external" data-ajax="false"><img src="img/Iconos/Chat.png"></a></div>
+        <div id="IconoMapa"><a href="../../index.html#Mapa" rel="external" data-ajax="false"><img src="img/Iconos/Mapa.png"></a></div>
+		<div id="IconoMenu"><a href="#PanelMenu" data-rel="panel"><img src="img/Iconos/Menu.png"></a></div>
+        </div>
+        <div id="Logo"><a href="#Bienvenida" data-transition="slide"><img src="img/Iconos/Logo.png"></a></div>
+  </div>
+<!--Panel Menu-->
+    <div data-role="panel" id="PanelMenu" data-display="overlay" data-position="right">  
+    	<div id="ListaMenu" data-role="controlgroup" data-theme="b">
+        	<a href="#" data-rel="close"><div id="CerrarMenu"><img src="img/Iconos/FlechaS.png"></div></a>
+    		<a href="#Inicio" data-role="button" data-iconpos="left" id="bI" data-transition="slide">Inicio</a>
+   			<a id="bA" href="#Aves" data-role="button" data-iconpos="left" data-transition="slide">Aves</a>
+    		<a id="bG" href="#Galeria" data-role="button" data-iconpos="left" data-transition="slide">Galería</a>
+    		<a id="bV" href="#Videos" data-role="button" data-iconpos="left" data-transition="slide">Videos</a>
+    		<a id="Presionado" href="#Contacto" data-role="button" data-iconpos="left" data-transition="slide">Contacto</a>
+    	</div>
+  	</div>
+<!--Termina Panel Menu-->
+
+<!--Contenido-->
+<div id="Contenedor" data-role="content">
+	<div id="CuadroInicio">
+		<a href="#Escribenos" data-role="button" data-rel="popup" data-transition="pop" data-theme="b" id="PopSabias">
+        	<img class="IconoSabias" src="img/Iconos/Mensajes.png">
+        	<h4 class="TextoSabias">Escríbenos</h4>
+        </a>
+        <a href="#Llamanos" data-role="button" data-rel="popup" data-transition="pop" data-theme="b" id="PopMapa">
+        	<img class="IconoSabias" src="img/Iconos/Llamadas.png">
+        	<h4 class="TextoSabias">Llámanos</h4>
+        </a>
+        <a href="#MapaU" data-role="button" data-rel="popup" data-transition="pop" data-theme="b" id="PopPersonajes">
+        	<img class="IconoSabias" src="img/Iconos/Ubicacion.png">
+        	<h4 class="TextoSabias">Visítanos</h4>
+        </a>
+	</div>
+    
+<!-- PopUp Ubicacion  -->
+   <div data-role="popup" id="MapaU" data-position-to="window" data-theme="b">
+   <a href="#" data-role="button" data-icon="delete" data-rel="back" data-iconpos="notext" id="CerrarImg"></a>
+        <iframe id="Ubicacion" src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d3966.3045863690313!2d-75.579931!3d6.22351!3m2!1i1024!2i768!4f13.1!2m1!1szoologico+medellin!5e0!3m2!1ses!2s!4v1427168287648" width="100%"></iframe>
+</div>
+<!-- Termina PopUp Ubicacion  -->
+
+<div data-role="popup" id="Llamanos" data-position-to="window" data-theme="b">
+	<div class="Datos">
+    	<div id="BarraSabias"><center><h4 class="TituloPop">Contacto</h4></center><a href="#" data-role="button" data-icon="delete" data-rel="back" data-iconpos="notext" id="Cerrar"></a></div>
+        <p><b>Telefono:</b>2360011</p>
+        <p><b>Celular:</b>320 633 3887</p>
+    </div>
+</div>
+
+
+
+<div data-role="popup" id="Escribenos" data-position-to="window" data-theme="b">
+	<div class="Datos">
+    	<div id="BarraSabias"><center><h4 class="TituloPop">Escribe tu mensaje</h4></center><a href="#" data-role="button" data-icon="delete" data-rel="back" data-iconpos="notext" id="Cerrar"></a></div>
+        
+        <form action="validar_Formulario.php" method="POST">
+<tr>
+	<label for="nombre" id="tituloNombre">Nombre</label>
+    <input type="text" id="nombre2" name="nombre" value="" placeholder="Name"/>
+  </tr>
+  <tr>  
+    <label for="email" id="tituloEmail">Correo</label>
+    <input type="email" id="email" name="email" value=""  placeholder="Email"/>
+  </tr>
+  <tr>
+    	<label for="mensaje" id="tituloMensaje">Mensaje</label>
+    	<textarea name="mensaje" id="mensaje" cols="34" rows="5" placeholder="Escriba aquí su mensaje"></textarea>
+    </tr>
+    <div id="cajaEnviar"> <input type="submit" name="Submit" value="Enviar" ></div>
+ </form>
+        
+    </div>
+</div>
+
+    
+   
+</div>
+<!--Termina Contenido-->
+
+<!--Footer-->
+<div id="Footer" data-role="footer" data-position="fixed">
+    <div id="LogoP"><img src="img/Iconos/LogoP.png"></div>
+</div>
+</div>
+<!--Termina Footer-->
+<!--Termina Contacto-->
+</body>
+</html>
